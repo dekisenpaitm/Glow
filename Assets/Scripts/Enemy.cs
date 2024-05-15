@@ -21,6 +21,9 @@ public class Enemy : MonoBehaviour, IHitable
     private Rigidbody _rb;
     private bool _hit;
     public Transform[] pois;
+    public Transform _currentDestination;
+    private bool _isIdling;
+
 
     void Start()
     {
@@ -28,6 +31,7 @@ public class Enemy : MonoBehaviour, IHitable
         _rb = GetComponent<Rigidbody>();
         _anim = GetComponent<HumanoidAnimationController>();
         _player = FindObjectOfType<Movement>(includeInactive: true);
+        _currentDestination = pois[randomPoint()];
     }
 
     public int GetDamage()
@@ -37,48 +41,72 @@ public class Enemy : MonoBehaviour, IHitable
 
     private int randomPoint()
     {
-        return Random.Range(0, pois.Length - 1);
+        return Random.Range(0, pois.Length);
     }
 
-    private void GoToPoint(int point)
+    private void SetNewDestination()
+    {
+        float distanceToDestination = Vector3.Distance(new Vector3(_currentDestination.position.x, 0, _currentDestination.position.z), transform.position);
+        if(distanceToDestination < 1f && !_isIdling)
+        {
+            StartCoroutine(reachedLocation());
+        }
+    }
+
+    private void GoToPoint()
     {
         var step = 1 * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, pois[point].position, step);
+        transform.position = Vector3.MoveTowards(transform.position, _currentDestination.position, step);
     }
 
-    private void RotateEnemy()
+    private void RotateEnemy(Transform target)
     {
-        Vector3 direction = _player.transform.position - transform.position;
+        Vector3 direction = target.position - transform.position;
         Quaternion toRotation = Quaternion.LookRotation(direction, Vector3.up);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 640 * Time.deltaTime);
     }
 
     void Update()
     {
+        if(transform.position.y < 0)
+        {
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        }
+
+        SetNewDestination();
+
         float distance = Vector3.Distance(_player.gameObject.transform.position, transform.position);
 
         if (_hit) return;
 
         if (distance <= 10f && distance >= 2f)
         {
+            _isIdling = false;
             var step = 1 * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(_player.gameObject.transform.position.x, 0, _player.gameObject.transform.position.z), step);
             _anim.PlayRunning();
-            RotateEnemy();
+            RotateEnemy(_player.gameObject.transform);
         }
         else if (distance <= 2f)
         {
+            _isIdling = false;
             _anim.PlayAttack();
         }
-        else if (distance > 10f)
+        else if (distance > 10f && !_isIdling)
         {
-            _anim.PlayIdle();
+            _anim.PlayRunning();
+            GoToPoint();
+            RotateEnemy(_currentDestination);
         }
+    }
 
-        /*else if (distance > 10f)
-        {
-            GoToPoint(randomPoint());
-        }*/
+    private IEnumerator reachedLocation()
+    {
+        _isIdling = true;
+        _anim.PlayIdle();
+        yield return new WaitForSeconds(2f);
+        _currentDestination = pois[randomPoint()];
+        _isIdling = false;
     }
 
     public void Execute(Transform executionSource)
