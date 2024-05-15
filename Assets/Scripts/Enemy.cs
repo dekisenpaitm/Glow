@@ -79,7 +79,7 @@ public class Enemy : MonoBehaviour, IHitable
 
         if (_hit) return;
 
-        if (distance <= 10f && distance >= 2f)
+        if (distance <= 10f && distance >= 1f)
         {
             _isIdling = false;
             var step = 1 * Time.deltaTime;
@@ -87,7 +87,7 @@ public class Enemy : MonoBehaviour, IHitable
             _anim.PlayRunning();
             RotateEnemy(_player.gameObject.transform);
         }
-        else if (distance <= 2f)
+        else if (distance <= 1f)
         {
             _isIdling = false;
             _anim.PlayAttack();

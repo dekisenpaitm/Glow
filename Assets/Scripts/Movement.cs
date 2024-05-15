@@ -17,10 +17,10 @@ public class Movement : MonoBehaviour
 
     [SerializeField]
     private float _speed;
-    private float _velocity;
+    public float _velocity;
 
-    private bool _attacking;
-    private bool _isGrounded;
+    public bool _attacking;
+    public bool _isGrounded;
     private int _jumpCount = 2;
     private bool _dashCD;
     private bool _dashing;
@@ -88,6 +88,21 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.y <= 0.1)
+        {
+            _isGrounded = true;
+        }
+        else
+        {
+            _isGrounded = false;
+        }
+
+        if (_jumpCount == 2 && !_isGrounded)
+        {
+            _velocity = 0;
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);            
+        }
+
         if (!_isGrounded && !_dashing)
         {
             _velocity += Physics.gravity.y * Time.deltaTime;
