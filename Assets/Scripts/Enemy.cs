@@ -20,13 +20,16 @@ public class Enemy : MonoBehaviour, IHitable
     private HumanoidAnimationController _anim;
     private Rigidbody _rb;
     private bool _hit;
-    public Transform[] pois;
+    private Transform[] pois;
     public Transform _currentDestination;
     private bool _isIdling;
+
+    public Collider hitCollider;
 
 
     void Start()
     {
+        pois = FindObjectOfType<NavPointManager>().points;
         currentHealth = maxHealth;
         _rb = GetComponent<Rigidbody>();
         _anim = GetComponent<HumanoidAnimationController>();
@@ -37,6 +40,11 @@ public class Enemy : MonoBehaviour, IHitable
     public int GetDamage()
     {
         return damage;
+    }
+
+    public void activateHitCollider()
+    {
+        hitCollider.enabled = !hitCollider.enabled;
     }
 
     private int randomPoint()

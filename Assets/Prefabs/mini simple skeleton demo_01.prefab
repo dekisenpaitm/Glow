@@ -608,7 +608,8 @@ MonoBehaviour:
   maxHealth: 5
   currentHealth: 0
   damage: 1
-  pois: []
+  _currentDestination: {fileID: 0}
+  hitCollider: {fileID: 7725234386436361039}
 --- !u!54 &1714014213528678123
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1013,7 +1014,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.27501872
   m_Center: {x: -0.000000002973214, y: 0.000000014984305, z: -0.033469044}
