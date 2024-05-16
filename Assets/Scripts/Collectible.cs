@@ -2,38 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CollectibleType
+{
+    heart,
+    coin
+}
+
 public class Collectible : MonoBehaviour
 {
+    
+    [Header("TypeOfCollectible")]
+    [SerializeField]
+    private CollectibleType _collectibleType;
 
-    private CoinCounter _coinCounter;
+    #region Referances
     private Player _player;
-    public bool heart;
-    public bool coin;
-    // Start is called before the first frame update
+    #endregion
+
     void Start()
     {
         _player = FindObjectOfType<Player>();
-        _coinCounter = FindObjectOfType<CoinCounter>(includeInactive:true);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (coin)
+            if (_collectibleType == CollectibleType.coin)
             {
-                _coinCounter.coinCounter += 1;
+                GameManager.instance.IncreaseCollectedCoins(1);
                 Destroy(gameObject);
             }
 
-            if (heart)
+            if (_collectibleType == CollectibleType.heart)
             {
+                GameManager.instance.IncreaseHealth(1);
                 _player.HealthUp();
                 Destroy(gameObject);
             }

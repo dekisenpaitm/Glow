@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class DamageToPlayer : MonoBehaviour
 {
+    #region Referances
     public Enemy _enemy;
+    #endregion
 
     private void OnTriggerEnter(Collider other)
     {

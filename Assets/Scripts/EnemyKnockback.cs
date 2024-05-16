@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class EnemyKnockback : MonoBehaviour
 {
-    private CapsuleCollider _sword;
+    #region Attributes
+    [Header("HitEffect")]
     public GameObject hitEffect;
+
     private int _damage;
+
+    #endregion
+
+    #region Referances
+    private CapsuleCollider _sword;
+    #endregion
 
     private void Start()
     {

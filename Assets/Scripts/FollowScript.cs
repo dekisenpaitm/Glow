@@ -4,16 +4,23 @@ using UnityEngine;
 
 public class FollowScript : MonoBehaviour
 {
-    public Transform player;
+    #region Attributes
+    [Header("Target")]
+    [SerializeField]
+    private Transform _player;
 
+    [Header("Offset")]
+    [SerializeField]
+    private Vector3 _offset;
+    #endregion
 
     private void Start()
     {
-        player = FindObjectOfType<Movement>(includeInactive: true).transform;
+        _player = FindObjectOfType<Movement>(includeInactive: true).transform;
     }
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position + new Vector3(0, 6, 10);
+        transform.position = _player.position + _offset;
     }
 }

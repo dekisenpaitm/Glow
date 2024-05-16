@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class HumanoidAnimationController : MonoBehaviour
 {
-
+    #region Referances
     private Animator _anim;
+    #endregion
 
     private void Start()
     {

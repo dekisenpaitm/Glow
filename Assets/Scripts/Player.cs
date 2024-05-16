@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    #region PlayerStats
     [SerializeField]
     private string playerName;
 
@@ -15,15 +16,16 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private int damage;
+    #endregion
 
+    #region DamageCheck
     private bool _hit;
-
-    private HealthHolder _healthHolder;
+    #endregion
 
     private void Start()
     {
         currentHealth = maxHealth;
-        _healthHolder = FindObjectOfType<HealthHolder>();
+        GameManager.instance.Health = maxHealth;
     }
 
     public void HealthUp()
@@ -31,7 +33,6 @@ public class Player : MonoBehaviour
         if (currentHealth < maxHealth)
         {
             currentHealth++;
-            _healthHolder.UpdateHealth();
         }
     }
 
@@ -56,7 +57,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log("I got hit with " + damage);
             currentHealth -= damage;
-            _healthHolder.UpdateHealth();
+            GameManager.instance.DecreaseHealth(damage);
             StartCoroutine(GotDamage());
 
             if (currentHealth <= 0)

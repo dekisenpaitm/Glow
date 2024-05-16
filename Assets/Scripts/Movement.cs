@@ -4,34 +4,60 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+internal enum MovementType
+{
+    TransformBased,
+    PhysicsBased
+}
 public class Movement : MonoBehaviour
 {
-
-    private PlayerInput input = null;
-
-    private Rigidbody _rb;
-
-    [SerializeField]
-    private float _force;
-    private int _attackCounter;
-
+    #region BasicMovement
+    [Header("MovementSpeed")]
     [SerializeField]
     private float _speed;
+
+    [Header("CurrentVelocity")]
+    [SerializeField]
     public float _velocity;
 
-    public bool _attacking;
-    public bool _isGrounded;
-    private int _jumpCount = 2;
-    private bool _dashCD;
-    private bool _dashing;
-    private TrailRenderer _dashTrail;
+    [SerializeField]
+    private ForceMode _selectedForceMode;
 
-    private Vector2 moveVector;
-    private Vector3 movementDirection3d;
+    [SerializeField]
+    private MovementType _movementType;
 
+    private Vector2 _moveVector;
+    private Vector3 _movementDirection3d;
+    #endregion
+
+    #region ComponentReferances
+    private PlayerInput input = null;
     private HumanoidAnimationController _playerAnim;
+    private Rigidbody _rb;
+    private TrailRenderer _dashTrail;
     private TrailEnabler _trail;
     private EnemyKnockback _knock;
+    #endregion
+
+    #region Attack
+    private int _attackCounter;
+    private bool _attacking;
+    #endregion
+
+    #region Jump
+    [Header("JumpForce")]
+    [SerializeField]
+    private float _force;
+
+    public bool _isGrounded;
+    private int _jumpCount = 2;
+    #endregion
+
+    #region Dash
+    private bool _dashCD;
+    private bool _dashing;
+    #endregion
+
 
     void Start()
     {
@@ -72,7 +98,7 @@ public class Movement : MonoBehaviour
     {
         if (!_attacking)
         {
-            _rb.velocity = new Vector3(moveVector.x, _velocity, moveVector.y) * _speed;
+            _rb.velocity = new Vector3(_moveVector.x, _velocity, _moveVector.y) * _speed;
         }
         if(_rb.velocity.x != 0 || _rb.velocity.z != 0)
         {
@@ -111,20 +137,27 @@ public class Movement : MonoBehaviour
 
     private void RotatePlayer()
     {
-        Quaternion toRotation = Quaternion.LookRotation(movementDirection3d, Vector3.up);
+        Quaternion toRotation = Quaternion.LookRotation(_movementDirection3d, Vector3.up);
 
         transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, 640 * Time.deltaTime);
     }
 
     private void OnMovementPerformed(InputAction.CallbackContext value)
     {
-        moveVector = value.ReadValue<Vector2>();
-        movementDirection3d = new Vector3(moveVector.x, 0, moveVector.y);
+        if (_movementType == MovementType.TransformBased)
+        {
+            _moveVector = value.ReadValue<Vector2>();
+            _movementDirection3d = new Vector3(_moveVector.x, 0, _moveVector.y);
+        }
+        else if (_movementType == MovementType.PhysicsBased)
+        {
+            _rb.AddForce(_movementDirection3d, ForceMode.Force);
+        }
     }
 
     private void OnMovementCanceled(InputAction.CallbackContext value)
     {
-        moveVector = Vector2.zero;
+        _moveVector = Vector2.zero;
     }
 
     private void OnJumpPerformed(InputAction.CallbackContext value)

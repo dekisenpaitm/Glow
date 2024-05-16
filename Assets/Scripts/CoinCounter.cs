@@ -5,23 +5,27 @@ using TMPro;
 
 public class CoinCounter : MonoBehaviour
 {
-    public int coinCounter = 0;
-    public TextMeshProUGUI text;
-    public TextMeshProUGUI winText;
 
-    // Start is called before the first frame update
-    void Start()
+    #region Attributes
+    [SerializeField]
+    private int _coinCounter = 0;
+    #endregion
+
+    public int Coins
     {
-        
+        get { return _coinCounter; }  
+        set { _coinCounter = value; }
     }
 
-    // Update is called once per frame
-    void Update()
+    private TextMeshProUGUI text;
+
+    private void Start()
     {
-        if(coinCounter == 10)
-        {
-            winText.text = "You've won the game. Go touch grass...";
-        }
-        text.text = coinCounter.ToString();
+        text = GetComponentInChildren<TextMeshProUGUI>();
+    }
+
+    private void Update()
+    {
+        text.text = _coinCounter.ToString();
     }
 }
