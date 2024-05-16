@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
         _coinCounter.Coins = _collectedCoins;
     }
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if (instance != null)
         {
