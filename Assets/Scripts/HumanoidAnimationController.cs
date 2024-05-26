@@ -33,6 +33,11 @@ public class HumanoidAnimationController : MonoBehaviour
         _anim.Play("Attack_B");
     }
 
+    public void PlayAirAttack()
+    {
+        _anim.Play("AirAttack");
+    }
+
     public void PlayHit()
     {
         _anim.Play("Hit");

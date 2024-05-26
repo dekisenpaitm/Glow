@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5EE1B001-1993-40D5-9B06-590D505A06F5}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{5EE1B001-1993-40D5-9B06-590D505A06F5}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Glow" ID="{D1EA34E6-73B3-4E29-B19B-A166876C8E12}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_background" ID="{78D83E92-CE40-43E7-B0F6-D00B8C3748DF}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_orbs" ID="{CCA329B5-8F98-4AE9-9CD2-EBD853321E75}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_sword" ID="{CC3EFAEC-858E-4B71-B257-506D13C371CD}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

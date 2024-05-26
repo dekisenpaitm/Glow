@@ -42,6 +42,7 @@ public class Movement : MonoBehaviour
     #region Attack
     private int _attackCounter;
     private bool _attacking;
+    private bool _airAttacking;
     #endregion
 
     #region Jump
@@ -100,6 +101,7 @@ public class Movement : MonoBehaviour
         {
             _rb.velocity = new Vector3(_moveVector.x, _velocity, _moveVector.y) * _speed;
         }
+
         if(_rb.velocity.x != 0 || _rb.velocity.z != 0)
         {
             _playerAnim.PlayRunning();
@@ -179,23 +181,55 @@ public class Movement : MonoBehaviour
 
     private void OnAttackPerformed(InputAction.CallbackContext value)
     {
-        if (!_attacking && _isGrounded)
+        if (!_attacking && _isGrounded && !_airAttacking)
         {
-            _knock.UseSword();
-            _trail.EnableTrail();
-            _attacking = true;
-            _attackCounter++;
-            if(_attackCounter == 1)
-            {
-                _playerAnim.PlayAttack();
-            } else
-            {
-                _playerAnim.PlayAttackB();
-                _attackCounter = 0;
-            }
-            
+            BaseAttack();
             StartCoroutine(Attack());
+        } 
+        else if (!_attacking && !_isGrounded)
+        {
+            AerialAttack();
         }
+    }
+
+    private void BaseAttack()
+    {
+        _knock.UseSword();
+        _trail.EnableTrail();
+        _attacking = true;
+        _attackCounter++;
+        if (_attackCounter == 1)
+        {
+            _playerAnim.PlayAttack();
+        }
+        else
+        {
+            _playerAnim.PlayAttackB();
+            _attackCounter = 0;
+        }
+    }
+
+    private void AerialAttack()
+    {
+        _knock.UseSword();
+        _trail.EnableTrail();
+        _attackCounter++;
+        StartCoroutine(AirAttack());
+        _playerAnim.PlayAttackB();
+
+    }
+
+    private IEnumerator AirAttack()
+    {
+        _airAttacking = true;
+        _dashTrail.emitting = true;
+        _speed += 5;
+        yield return new WaitForSeconds(0.3f);
+        _knock.UseSword();
+        _trail.EnableTrail();
+        _dashTrail.emitting = false;
+        _speed -= 5;
+        _airAttacking = false;
     }
 
     private void OnDashPerformed(InputAction.CallbackContext value)

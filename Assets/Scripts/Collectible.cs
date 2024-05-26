@@ -31,6 +31,7 @@ public class Collectible : MonoBehaviour
             if (_collectibleType == CollectibleType.coin)
             {
                 GameManager.instance.IncreaseCollectedCoins(1);
+                AkSoundEngine.PostEvent("Play_orbs", gameObject);
                 Destroy(gameObject);
             }
 

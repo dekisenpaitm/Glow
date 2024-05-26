@@ -33,7 +33,6 @@ public class EnemyKnockback : MonoBehaviour
 
         if (other.gameObject.CompareTag("Enemy"))
         {
-            
             other.GetComponent<Enemy>().Damage(_damage);
             GameObject hit = Instantiate(hitEffect);
             hit.transform.position = collisionPoint;

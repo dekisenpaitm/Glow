@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_orbs" ID="{CCA329B5-8F98-4AE9-9CD2-EBD853321E75}">
+					<ChildrenList>
+						<Action Name="" ID="{9F3F7E9A-D497-4FD9-840F-F46770E02C17}" ShortID="445133727">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="orbs" ID="{E78B1AFB-59F6-431A-92B2-27B18CBBD724}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_background" ID="{78D83E92-CE40-43E7-B0F6-D00B8C3748DF}">
+					<ChildrenList>
+						<Action Name="" ID="{09C8C732-E327-4D03-8712-4FC1A65B7B89}" ShortID="41186578">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Zombie Breakout Soundscape" ID="{8C5CF57C-66D9-4F22-B334-BF706EBA6E36}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_sword" ID="{CC3EFAEC-858E-4B71-B257-506D13C371CD}">
+					<ChildrenList>
+						<Action Name="" ID="{F3D455F6-5DA9-4642-87E5-11A6C4327D2A}" ShortID="1045275486">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sword" ID="{425DC467-C9C8-418A-8165-46E63ED09C8D}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -12,6 +12,7 @@ public class EnemyController : MonoBehaviour
     #region Referances
     private Movement _player;
     private HumanoidAnimationController _anim;
+    public PlayerKnockback _knockback;
     private Enemy _enemy;
     #endregion
 
@@ -19,10 +20,6 @@ public class EnemyController : MonoBehaviour
     private Transform[] _pois;
     public Transform _currentDestination;
     private bool _isIdling;
-    #endregion
-
-    #region DmgCollider
-    public Collider hitCollider;
     #endregion
 
     void Start()
@@ -37,7 +34,7 @@ public class EnemyController : MonoBehaviour
 
     public void activateHitCollider()
     {
-        hitCollider.enabled = !hitCollider.enabled;
+        _knockback.UseHand();
     }
 
     private int randomPoint()

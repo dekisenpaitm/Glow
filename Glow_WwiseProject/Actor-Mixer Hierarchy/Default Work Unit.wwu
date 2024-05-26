@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="healpop" ID="{00CF9F1E-353E-4DDD-B924-4D175BD80559}" ShortID="213876765">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="healpop" ID="{31A5184E-DD7E-47AA-9A78-2F13A914CB16}">
+							<Language>SFX</Language>
+							<AudioFile>healpop.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="8730712"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="healpop" ID="{31A5184E-DD7E-47AA-9A78-2F13A914CB16}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Fireplace crackling wood little flame" ID="{7BD39F10-AF10-433D-9BED-C08A8C45AD51}" ShortID="314968536">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Fireplace crackling wood little flame" ID="{55914D34-BD95-43F0-91CC-A190935F0406}">
+							<Language>SFX</Language>
+							<AudioFile>Fireplace crackling wood little flame.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="631439289"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Fireplace crackling wood little flame" ID="{55914D34-BD95-43F0-91CC-A190935F0406}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Knight Left Footstep on Gravel 3 (With Chainmail)" ID="{377F7FC2-C2CA-43EA-9482-109C1EF1C3FD}" ShortID="986744359">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Knight Left Footstep on Gravel 3 (With Chainmail)" ID="{B534F242-F6A1-4931-BF98-CDF204CB125D}">
+							<Language>SFX</Language>
+							<AudioFile>Knight Left Footstep on Gravel 3 (With Chainmail).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="382547938"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Knight Left Footstep on Gravel 3 (With Chainmail)" ID="{B534F242-F6A1-4931-BF98-CDF204CB125D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Knight Left Footstep on Gravel 1 (With Chainmail)" ID="{A81B1650-0649-4B31-86ED-768EBAA16A6C}" ShortID="516095755">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Knight Left Footstep on Gravel 1 (With Chainmail)" ID="{EC6C64F4-A1BF-46F2-B780-D66F3C02C6CF}">
+							<Language>SFX</Language>
+							<AudioFile>Knight Left Footstep on Gravel 1 (With Chainmail).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="629556473"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Knight Left Footstep on Gravel 1 (With Chainmail)" ID="{EC6C64F4-A1BF-46F2-B780-D66F3C02C6CF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Knight Right Footstep on Gravel 3 (With Chainmail)" ID="{21271DFC-086C-47F4-A1D0-B9E1ECCD8065}" ShortID="557439898">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Knight Right Footstep on Gravel 3 (With Chainmail)" ID="{A534CC9E-E9ED-40BF-B7F5-3DA0F7AA4C45}">
+							<Language>SFX</Language>
+							<AudioFile>Knight Right Footstep on Gravel 3 (With Chainmail).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="293119553"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Knight Right Footstep on Gravel 3 (With Chainmail)" ID="{A534CC9E-E9ED-40BF-B7F5-3DA0F7AA4C45}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Cry for help- Collective" ID="{A0DD4B64-4804-4A0C-B55C-3CCD9CD598A6}" ShortID="436234069">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Cry for help- Collective" ID="{0B9A49DC-9590-46CB-8B78-4B4FC7EB59A3}">
+							<Language>SFX</Language>
+							<AudioFile>Cry for help- Collective.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="167941320"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Cry for help- Collective" ID="{0B9A49DC-9590-46CB-8B78-4B4FC7EB59A3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="2 Zombies eating" ID="{B7E9209F-DE20-4B37-B96F-B43170490847}" ShortID="236248861">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="2 Zombies eating" ID="{B34FE44A-BB0E-48DE-BC16-B03B804F212F}">
+							<Language>SFX</Language>
+							<AudioFile>2 Zombies eating.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="392492340"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="2 Zombies eating" ID="{B34FE44A-BB0E-48DE-BC16-B03B804F212F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Zombies eating" ID="{33C15E32-C7BE-42C5-BB3A-9D139DBFA778}" ShortID="351183999">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Zombies eating" ID="{244D2E41-D588-44CC-A544-96E789FED58E}">
+							<Language>SFX</Language>
+							<AudioFile>Zombies eating.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="679865478"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Zombies eating" ID="{244D2E41-D588-44CC-A544-96E789FED58E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Deep Zombie 2" ID="{6A7FF587-CEFB-4A47-8211-AA72BD665EE4}" ShortID="727019496">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Deep Zombie 2" ID="{3536C6B5-78DC-4FA7-AAB5-96A3C9FAF084}">
+							<Language>SFX</Language>
+							<AudioFile>Deep Zombie 2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="898333519"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Deep Zombie 2" ID="{3536C6B5-78DC-4FA7-AAB5-96A3C9FAF084}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="zombie5" ID="{AAE3CA34-059E-4190-9D00-F93CF5A3119B}" ShortID="275248948">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="zombie5" ID="{CE952160-735E-48D7-B84D-A85B706297FC}">
+							<Language>SFX</Language>
+							<AudioFile>zombie5.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="786037089"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="zombie5" ID="{CE952160-735E-48D7-B84D-A85B706297FC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="EAS Warning of Civil unrest and or Zombies" ID="{6059400C-47F2-435F-B933-7914DCCBA498}" ShortID="726961211">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="EAS Warning of Civil unrest and or Zombies" ID="{565FE5C6-D77D-4C9F-A78C-142D7FC265D3}">
+							<Language>SFX</Language>
+							<AudioFile>EAS Warning of Civil unrest and or Zombies.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="547258487"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="EAS Warning of Civil unrest and or Zombies" ID="{565FE5C6-D77D-4C9F-A78C-142D7FC265D3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Zombie News AM Radio" ID="{8CD91AB3-9644-4912-AA50-15D251195DC5}" ShortID="414572270">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Zombie News AM Radio" ID="{2756B289-AF7F-4F5C-933B-CD50B45E065E}">
+							<Language>SFX</Language>
+							<AudioFile>Zombie News AM Radio.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="545121934"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Zombie News AM Radio" ID="{2756B289-AF7F-4F5C-933B-CD50B45E065E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="OrganLoop" ID="{5ACA5CD2-D751-4172-839E-E34C9DE1E06A}" ShortID="457942201">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="OrganLoop" ID="{E4A389D4-762A-4384-8728-3A59F8C4E3A9}">
+							<Language>SFX</Language>
+							<AudioFile>OrganLoop.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="256297809"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="OrganLoop" ID="{E4A389D4-762A-4384-8728-3A59F8C4E3A9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="orbs" ID="{E78B1AFB-59F6-431A-92B2-27B18CBBD724}" ShortID="721844525">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{72A8EB7E-BE23-4DBD-82E2-74B051807D18}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="400"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Retro coin collect 1" ID="{A3AC9CA6-33A8-4334-9933-6363399BF66F}" ShortID="744739670">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Retro coin collect 1" ID="{4766AD46-F19F-4181-904E-281A7FC58D53}">
+									<Language>SFX</Language>
+									<AudioFile>Retro coin collect 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="117066013"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Retro coin collect 1" ID="{4766AD46-F19F-4181-904E-281A7FC58D53}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Retro coin collect 2" ID="{94C03872-36CB-431E-9152-B811999B6EE7}" ShortID="89803304">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Retro coin collect 2" ID="{AD376A88-17F2-4679-8C8B-5F605B89C5C7}">
+									<Language>SFX</Language>
+									<AudioFile>Retro coin collect 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="64916704"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Retro coin collect 2" ID="{AD376A88-17F2-4679-8C8B-5F605B89C5C7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Retro coin collect 3" ID="{452CA9F4-27CD-4A25-879D-137103070DEB}" ShortID="481372928">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Retro coin collect 3" ID="{BEC75256-EADC-41C3-A1B7-CA4BFD51A80F}">
+									<Language>SFX</Language>
+									<AudioFile>Retro coin collect 3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="663997371"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Retro coin collect 3" ID="{BEC75256-EADC-41C3-A1B7-CA4BFD51A80F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="sword" ID="{425DC467-C9C8-418A-8165-46E63ED09C8D}" ShortID="447149933">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{44168667-55B4-407D-8FE1-E7606B86E13B}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4F59E826-C715-421E-A4D1-B1DB89A2E2EA}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="400"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sword_1" ID="{9C5211D3-0AA2-4321-B1AC-52EE98E9CC13}" ShortID="879758928">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9AA245EF-2685-41F9-9C7C-D2AD2E3C066D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A7431B34-E550-4255-8CFF-85478ED4C00B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="49"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C7CF33E5-B633-444E-8587-EF77E764C002}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="400"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="06SWORD02_aif" ID="{D5E8A746-A7A1-4FC6-A848-1E5375F8D4B4}">
+									<Language>SFX</Language>
+									<AudioFile>06SWORD02.aif.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="371088928"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="06SWORD02_aif" ID="{D5E8A746-A7A1-4FC6-A848-1E5375F8D4B4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sword_2" ID="{2E7BA86B-ADC1-46D3-A8AB-282B715C4406}" ShortID="29531576">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E33B9DA1-3CA1-4CC6-BBF6-F5A79422E2D2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{76E70575-1925-4951-A1DD-2FA163C59712}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="400"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="06SWORD06_aif" ID="{7046B3A3-392F-48EE-B863-267E3C6A57ED}">
+									<Language>SFX</Language>
+									<AudioFile>06SWORD06.aif.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="580428230"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="06SWORD06_aif" ID="{7046B3A3-392F-48EE-B863-267E3C6A57ED}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sword_3" ID="{B40B5900-F779-4990-A9C4-A8F918ED0F3C}" ShortID="265393655">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E4055FCE-67A1-4B11-A9D6-73671BB01D93}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{DDFAE328-58FB-421A-8434-8ED744CCE623}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="48"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{47F44332-F53A-4BF2-8FE9-646E31EEE7B5}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="400"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sword_Clash (27)" ID="{46D4CC80-E6B3-450F-BD87-1319A2BC0256}">
+									<Language>SFX</Language>
+									<AudioFile>Sword_Clash (27).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="652543009"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Sword_Clash (27)" ID="{46D4CC80-E6B3-450F-BD87-1319A2BC0256}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<ActorMixer Name="music" ID="{D3A786A1-00DE-4552-9C24-CB1E69604211}" ShortID="1023583609">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Zombie Breakout Soundscape" ID="{8C5CF57C-66D9-4F22-B334-BF706EBA6E36}" ShortID="236971395">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="IsStreamingEnabled" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-27</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Zombie Breakout Soundscape" ID="{028D3F76-FBB4-4061-8A21-3C922DCF73E6}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="24.227469273743"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="35.6286312849162"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Zombie Breakout Soundscape.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="177099968"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Zombie Breakout Soundscape" ID="{028D3F76-FBB4-4061-8A21-3C922DCF73E6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

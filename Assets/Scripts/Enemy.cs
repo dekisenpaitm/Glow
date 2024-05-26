@@ -85,6 +85,7 @@ public class Enemy : MonoBehaviour, IHitable
     {
         if (!_hit)
         {
+            AkSoundEngine.PostEvent("Play_sword", gameObject);
             _anim.PlayHit();
             StartCoroutine(GotHit());
         }
