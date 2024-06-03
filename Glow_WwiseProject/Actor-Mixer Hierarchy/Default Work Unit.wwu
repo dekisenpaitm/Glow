@@ -3,29 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="healpop" ID="{00CF9F1E-353E-4DDD-B924-4D175BD80559}" ShortID="213876765">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="healpop" ID="{31A5184E-DD7E-47AA-9A78-2F13A914CB16}">
-							<Language>SFX</Language>
-							<AudioFile>healpop.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="8730712"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="healpop" ID="{31A5184E-DD7E-47AA-9A78-2F13A914CB16}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Fireplace crackling wood little flame" ID="{7BD39F10-AF10-433D-9BED-C08A8C45AD51}" ShortID="314968536">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -187,52 +164,6 @@
 						<ActiveSource Name="Zombies eating" ID="{244D2E41-D588-44CC-A544-96E789FED58E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Deep Zombie 2" ID="{6A7FF587-CEFB-4A47-8211-AA72BD665EE4}" ShortID="727019496">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Deep Zombie 2" ID="{3536C6B5-78DC-4FA7-AAB5-96A3C9FAF084}">
-							<Language>SFX</Language>
-							<AudioFile>Deep Zombie 2.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="898333519"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="Deep Zombie 2" ID="{3536C6B5-78DC-4FA7-AAB5-96A3C9FAF084}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="zombie5" ID="{AAE3CA34-059E-4190-9D00-F93CF5A3119B}" ShortID="275248948">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="zombie5" ID="{CE952160-735E-48D7-B84D-A85B706297FC}">
-							<Language>SFX</Language>
-							<AudioFile>zombie5.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="786037089"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="zombie5" ID="{CE952160-735E-48D7-B84D-A85B706297FC}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="EAS Warning of Civil unrest and or Zombies" ID="{6059400C-47F2-435F-B933-7914DCCBA498}" ShortID="726961211">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -318,6 +249,11 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -402,6 +338,7 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="sword" ID="{425DC467-C9C8-418A-8165-46E63ED09C8D}" ShortID="447149933">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="Lowpass" Type="int16">
 							<ModifierList>
 								<ModifierInfo>
@@ -621,8 +558,20 @@
 						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
+					<Playlist>
+						<ItemRef Name="sword_1" ID="{9C5211D3-0AA2-4321-B1AC-52EE98E9CC13}"/>
+						<ItemRef Name="sword_2" ID="{2E7BA86B-ADC1-46D3-A8AB-282B715C4406}"/>
+						<ItemRef Name="sword_3" ID="{B40B5900-F779-4990-A9C4-A8F918ED0F3C}"/>
+					</Playlist>
 				</RandomSequenceContainer>
 				<ActorMixer Name="music" ID="{D3A786A1-00DE-4552-9C24-CB1E69604211}" ShortID="1023583609">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
@@ -632,14 +581,69 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Zombie Breakout Soundscape" ID="{8C5CF57C-66D9-4F22-B334-BF706EBA6E36}" ShortID="236971395">
+						<Sound Name="Sad Movie sounds_01" ID="{3F1C556B-FF6A-4ED8-8951-0EA998E7BE82}" ShortID="600488767">
 							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="IsStreamingEnabled" Type="bool">
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-19</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sad Movie sounds_01" ID="{15DD3F85-233F-4AC6-B5A3-733CC93B8729}">
+									<Language>SFX</Language>
+									<AudioFile>Sad Movie sounds_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="854596543"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="music" ID="{A87B692E-A5F5-4E15-A11A-31CAC4F89BD0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="background" ID="{67FFDC2D-6613-4393-9FFF-046198C38444}"/>
+										<CustomState Name="" ID="{190B9624-6124-4291-A5C9-D1F758DC83DE}" ShortID="1030793694">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="finish" ID="{4F6F49ED-C0B4-4EC8-81C6-9CCA26F55282}"/>
+										<CustomState Name="" ID="{E4319731-AE87-4050-8D47-B84F5930475B}" ShortID="21894209"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Sad Movie sounds_01" ID="{15DD3F85-233F-4AC6-B5A3-733CC93B8729}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Zombie Breakout Soundscape" ID="{C23669EE-40C7-4D2F-A3ED-A035F6CDB945}" ShortID="998374607">
+							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-27</Value>
@@ -655,12 +659,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Zombie Breakout Soundscape" ID="{028D3F76-FBB4-4061-8A21-3C922DCF73E6}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="24.227469273743"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="35.6286312849162"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
+								<AudioFileSource Name="Zombie Breakout Soundscape" ID="{CFAE762E-5A15-456B-9158-1E148140E5FC}">
 									<Language>SFX</Language>
 									<AudioFile>Zombie Breakout Soundscape.wav</AudioFile>
 									<MediaIDList>
@@ -668,14 +667,438 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="music" ID="{A87B692E-A5F5-4E15-A11A-31CAC4F89BD0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="background" ID="{67FFDC2D-6613-4393-9FFF-046198C38444}"/>
+										<CustomState Name="" ID="{3ECB6278-3BB8-4361-936F-F66FC3336103}" ShortID="647975331"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="finish" ID="{4F6F49ED-C0B4-4EC8-81C6-9CCA26F55282}"/>
+										<CustomState Name="" ID="{8F85AC63-CE0F-404F-AD52-836303D71BF1}" ShortID="680215206">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="Zombie Breakout Soundscape" ID="{028D3F76-FBB4-4061-8A21-3C922DCF73E6}" Platform="Linked"/>
+								<ActiveSource Name="Zombie Breakout Soundscape" ID="{CFAE762E-5A15-456B-9158-1E148140E5FC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
+				<Sound Name="Attack 1 - The Ridge - Host" ID="{7DFECDD1-5DB6-4B6E-9CC2-F445CCC73A54}" ShortID="705987880">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Attack 1 - The Ridge - Host" ID="{E32AEDB1-0E92-4BA5-954C-2042C4748BD3}">
+							<Language>SFX</Language>
+							<AudioFile>Attack 1 - The Ridge - Host.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="190910125"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Attack 1 - The Ridge - Host" ID="{E32AEDB1-0E92-4BA5-954C-2042C4748BD3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Attack 2 - The Ridge - Host" ID="{75000B66-8BDF-4FD5-BBEF-94C36BCC4E2E}" ShortID="1038437845">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Attack 2 - The Ridge - Host" ID="{42069D71-9066-41BE-BAE0-9986B485E184}">
+							<Language>SFX</Language>
+							<AudioFile>Attack 2 - The Ridge - Host.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="684380764"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Attack 2 - The Ridge - Host" ID="{42069D71-9066-41BE-BAE0-9986B485E184}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Horror shrieks woman" ID="{70C2DC46-E123-459B-B988-DD2694C01D3F}" ShortID="199022406">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Horror shrieks woman" ID="{2C0E833C-0FC5-4351-B9D6-C7D435BF6443}">
+							<Language>SFX</Language>
+							<AudioFile>Horror shrieks woman.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="726339541"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Horror shrieks woman" ID="{2C0E833C-0FC5-4351-B9D6-C7D435BF6443}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="baby talk- aw1" ID="{CE9092F9-BE00-440A-A671-578B00522C85}" ShortID="731204414">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="baby talk- aw1" ID="{150D28E3-E82C-4FE7-B4AA-9EE4A37F5CF8}">
+							<Language>SFX</Language>
+							<AudioFile>baby talk- aw1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1008714796"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="baby talk- aw1" ID="{150D28E3-E82C-4FE7-B4AA-9EE4A37F5CF8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Nya" ID="{8CD3C2A1-AED5-4EA1-9EF3-D0E0453AE185}" ShortID="827802271">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Nya" ID="{2337D243-CEB4-466E-937E-7EAFEDBB1F95}">
+							<Language>SFX</Language>
+							<AudioFile>Nya.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="462764852"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Nya" ID="{2337D243-CEB4-466E-937E-7EAFEDBB1F95}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Metallic Whoosh" ID="{501EE7FB-8190-4EE8-AFEA-91A7ADBF028C}" ShortID="677280009">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Metallic Whoosh" ID="{BB8E50CA-15AB-4BB2-9FAE-9E433A6FD9C1}">
+							<Language>SFX</Language>
+							<AudioFile>Metallic Whoosh.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="810215975"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Metallic Whoosh" ID="{BB8E50CA-15AB-4BB2-9FAE-9E433A6FD9C1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="zombie" ID="{0F8985C2-1329-4CA3-9F58-62E66DE388A5}" ShortID="493203218">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{33F0EDB6-DA93-4306-9CD8-7C6C1E9AAE95}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="455"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Deep Zombie 2" ID="{6A7FF587-CEFB-4A47-8211-AA72BD665EE4}" ShortID="727019496">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Deep Zombie 2" ID="{3536C6B5-78DC-4FA7-AAB5-96A3C9FAF084}">
+									<Language>SFX</Language>
+									<AudioFile>Deep Zombie 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="898333519"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Deep Zombie 2" ID="{3536C6B5-78DC-4FA7-AAB5-96A3C9FAF084}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="zombie5" ID="{AAE3CA34-059E-4190-9D00-F93CF5A3119B}" ShortID="275248948">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="zombie5" ID="{CE952160-735E-48D7-B84D-A85B706297FC}">
+									<Language>SFX</Language>
+									<AudioFile>zombie5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="786037089"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="zombie5" ID="{CE952160-735E-48D7-B84D-A85B706297FC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<Sound Name="result-9" ID="{082CD44D-31F4-440F-87DC-D7CA2C53F994}" ShortID="163237584">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="result-9" ID="{5AE283B2-982D-4E66-B4BA-35B47E0F9C9D}">
+							<Language>SFX</Language>
+							<AudioFile>result-9.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="122133562"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="result-9" ID="{5AE283B2-982D-4E66-B4BA-35B47E0F9C9D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<BlendContainer Name="swoosh" ID="{52FBD89A-7B47-4383-9D74-C2C16ED6551B}" ShortID="367296809">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Swing 1_10" ID="{00586C98-10BB-4457-89DC-AB9484F65832}" ShortID="699441840">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Swing 1_10" ID="{11046666-C089-4154-AE5E-DC7F11E62342}">
+									<Language>SFX</Language>
+									<AudioFile>Swing 1_10.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="444349153"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Swing 1_10" ID="{11046666-C089-4154-AE5E-DC7F11E62342}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Swing 1_14" ID="{8C09EFE5-8059-4DD2-8F9C-3A4EECD50753}" ShortID="25014202">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Swing 1_14" ID="{0E95F7B6-1007-451D-9CC6-FCC87029E470}">
+									<Language>SFX</Language>
+									<AudioFile>Swing 1_14.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="750011000"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Swing 1_14" ID="{0E95F7B6-1007-451D-9CC6-FCC87029E470}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Swing 1_1" ID="{DC69F938-8EDA-4518-A554-324AEEDA79D0}" ShortID="18184764">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Swing 1_1" ID="{756B7F6D-6765-453F-9A31-D2F704270ED2}">
+									<Language>SFX</Language>
+									<AudioFile>Swing 1_1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="632184258"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Swing 1_1" ID="{756B7F6D-6765-453F-9A31-D2F704270ED2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+					<BlendTrackList>
+						<BlendTrack Name="swooshing" ID="{FB401C74-2052-47DA-80DF-056A1789D709}" ShortID="5621004">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{8DFE751D-6F47-4425-96CB-D9D35B201F20}" ShortID="885917140">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="swoosh" ID="{0139155C-2103-4470-B9A0-C59886C827EF}" WorkUnitID="{F5D3FE17-D469-480B-9378-1CB1B06C2163}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{25E4FD77-B6CE-464B-ADFB-BA0ECB9B0728}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-0.69524</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>4</XPos>
+														<YPos>200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="swoosh" ID="{0139155C-2103-4470-B9A0-C59886C827EF}" WorkUnitID="{F5D3FE17-D469-480B-9378-1CB1B06C2163}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="Swing 1_1" ID="{DC69F938-8EDA-4518-A554-324AEEDA79D0}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>1.25284339457568</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="Swing 1_10" ID="{00586C98-10BB-4457-89DC-AB9484F65832}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0.995625546806649</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>2.2169728783902</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="Swing 1_14" ID="{8C09EFE5-8059-4DD2-8F9C-3A4EECD50753}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>2.01049868766404</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>4</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

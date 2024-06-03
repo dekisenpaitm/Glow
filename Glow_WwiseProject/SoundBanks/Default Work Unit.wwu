@@ -5,9 +5,12 @@
 			<ChildrenList>
 				<SoundBank Name="Glow" ID="{D1EA34E6-73B3-4E29-B19B-A166876C8E12}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_background" ID="{78D83E92-CE40-43E7-B0F6-D00B8C3748DF}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_finish" ID="{741BA929-5E29-40D5-956A-3FF0F5780004}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_orbs" ID="{CCA329B5-8F98-4AE9-9CD2-EBD853321E75}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sword" ID="{CC3EFAEC-858E-4B71-B257-506D13C371CD}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_background" ID="{1B563A84-E7BE-4BDD-8872-3F3A19F901C8}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_zombie" ID="{79548FA4-02EF-4DC2-A47F-D3D3E4CFED0C}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_swoosh" ID="{E2BF4F5A-73BC-4F63-8F04-ABF0355D1EA8}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

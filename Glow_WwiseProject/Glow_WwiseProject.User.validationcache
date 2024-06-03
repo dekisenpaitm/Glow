@@ -30,9 +30,9 @@
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\States\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\States\Default Work Unit.wwu" DateLow="1717428255" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1716741359" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1717428255" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Queries\Factory Queries.wwu" DateLow="1712037088" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Presets\Factory Spatial Audio.wwu" DateLow="1712037088" DateHigh="0"/>
@@ -43,8 +43,9 @@
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Glow_WwiseProject.wproj" DateLow="1716726970" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Glow_WwiseProject.User.wsettings" DateLow="1717428528" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Events\Default Work Unit.wwu" DateLow="1716741359" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Events\Default Work Unit.wwu" DateLow="1717428439" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Effects\Factory Effects.wwu" DateLow="1716740598" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
@@ -53,5 +54,5 @@
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1716737606" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1716726875" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1716741359" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity_Projekte\Glow\Glow_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1717428430" DateHigh="0"/>
 </ValidationCache>

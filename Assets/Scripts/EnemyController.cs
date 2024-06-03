@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
 
     #region Attributes
     private int _speed;
+    private bool _isTriggered;
     #endregion
 
     #region Referances
@@ -40,6 +41,12 @@ public class EnemyController : MonoBehaviour
     private int randomPoint()
     {
         return Random.Range(0, _pois.Length);
+    }
+
+    private void Triggered()
+    {
+        _isTriggered = true;
+        AkSoundEngine.PostEvent("Play_zombie", gameObject);
     }
 
     private void SetNewDestination()
@@ -79,6 +86,10 @@ public class EnemyController : MonoBehaviour
 
         if (distance <= 10f && distance >= 1f)
         {
+            if (!_isTriggered)
+            {
+                Triggered();
+            }
             _isIdling = false;
             GoToPoint(_player.transform);
             _anim.PlayRunning();
@@ -91,6 +102,7 @@ public class EnemyController : MonoBehaviour
         }
         else if (distance > 10f && !_isIdling)
         {
+            _isTriggered = false;
             _anim.PlayRunning();
             GoToPoint(_currentDestination);
             RotateEnemy(_currentDestination);

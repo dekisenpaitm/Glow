@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private int _collectedCoins;
+
+    [SerializeField]
+    private bool _isWon;
     #endregion
 
     #region Referances
@@ -74,6 +77,17 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (_collectedCoins >= 5 && !_isWon)
+        {
+            GameWon();
+        }
+    }
+
+    public void GameWon()
+    {
+        _isWon = true;
+        AkSoundEngine.PostEvent("Play_finish", gameObject);
+        AkSoundEngine.SetState("music", "finish");
+        Time.timeScale = 0.1f;
     }
 }

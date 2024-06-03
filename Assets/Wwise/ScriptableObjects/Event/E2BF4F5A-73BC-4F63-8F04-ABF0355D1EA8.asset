@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304d883d011549e4498e5b2c9c9919a9, type: 3}
+  m_Name: E2BF4F5A-73BC-4F63-8F04-ABF0355D1EA8
+  m_EditorClassIdentifier: 
+  objectName: Play_swoosh
+  id: 2462113679
+  guid: E2BF4F5A-73BC-4F63-8F04-ABF0355D1EA8

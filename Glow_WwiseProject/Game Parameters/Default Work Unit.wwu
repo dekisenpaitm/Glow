@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F5D3FE17-D469-480B-9378-1CB1B06C2163}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{F5D3FE17-D469-480B-9378-1CB1B06C2163}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F5D3FE17-D469-480B-9378-1CB1B06C2163}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="swoosh" ID="{0139155C-2103-4470-B9A0-C59886C827EF}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="4"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

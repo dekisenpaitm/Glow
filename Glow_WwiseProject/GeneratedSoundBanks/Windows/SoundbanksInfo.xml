@@ -8,26 +8,29 @@
 		<ExternalSourcesOutputRoot>D:\Unity_Projekte\Glow\Glow_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles>
-		<File Id="177099968" Language="SFX">
-			<ShortName>Zombie Breakout Soundscape.wav</ShortName>
-			<Path>SFX\Zombie Breakout Soundscape_54D7BDF6.wem</Path>
-		</File>
-	</StreamedFiles>
+	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="668088558" Language="SFX" Hash="2982793094">
+		<SoundBank Id="668088558" Language="SFX" Hash="1585507517">
 			<ObjectPath>\SoundBanks\Default Work Unit\Glow</ObjectPath>
 			<ShortName>Glow</ShortName>
 			<Path>Glow.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3196207338" Name="Play_background" ObjectPath="\Events\Default Work Unit\Play_background" DurationType="Infinite">
-					<ReferencedStreamedFiles>
+				<Event Id="3196207338" Name="Play_background" ObjectPath="\Events\Default Work Unit\Play_background" DurationType="OneShot" DurationMin="255.100998" DurationMax="255.100998">
+					<IncludedMemoryFiles>
 						<File Id="177099968" Language="SFX">
 							<ShortName>Zombie Breakout Soundscape.wav</ShortName>
-							<Path>SFX\Zombie Breakout Soundscape_54D7BDF6.wem</Path>
+							<Path>SFX\Zombie Breakout Soundscape_10C4C929.wem</Path>
 						</File>
-					</ReferencedStreamedFiles>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1793765179" Name="Play_finish" ObjectPath="\Events\Default Work Unit\Play_finish" DurationType="OneShot" DurationMin="180.371002" DurationMax="180.371002">
+					<IncludedMemoryFiles>
+						<File Id="854596543" Language="SFX">
+							<ShortName>Sad Movie sounds_01.wav</ShortName>
+							<Path>SFX\Sad Movie sounds_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1995773880" Name="Play_orbs" ObjectPath="\Events\Default Work Unit\Play_orbs" DurationType="OneShot" DurationMin="0.214531" DurationMax="0.429688">
 					<IncludedMemoryFiles>
@@ -45,7 +48,23 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1191497377" Name="Play_sword" ObjectPath="\Events\Default Work Unit\Play_sword" DurationType="OneShot" DurationMin="0." DurationMax="0.">
+				<Event Id="2462113679" Name="Play_swoosh" ObjectPath="\Events\Default Work Unit\Play_swoosh" DurationType="OneShot" DurationMin="1.123083" DurationMax="1.123083">
+					<IncludedMemoryFiles>
+						<File Id="444349153" Language="SFX">
+							<ShortName>Swing 1_10.wav</ShortName>
+							<Path>SFX\Swing 1_10_10C4C929.wem</Path>
+						</File>
+						<File Id="632184258" Language="SFX">
+							<ShortName>Swing 1_1.wav</ShortName>
+							<Path>SFX\Swing 1_1_10C4C929.wem</Path>
+						</File>
+						<File Id="750011000" Language="SFX">
+							<ShortName>Swing 1_14.wav</ShortName>
+							<Path>SFX\Swing 1_14_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1191497377" Name="Play_sword" ObjectPath="\Events\Default Work Unit\Play_sword" DurationType="OneShot" DurationMin="0.391075" DurationMax="1.33093">
 					<IncludedMemoryFiles>
 						<File Id="371088928" Language="SFX">
 							<ShortName>06SWORD02.aif.wav</ShortName>
@@ -61,9 +80,24 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="246154100" Name="Play_zombie" ObjectPath="\Events\Default Work Unit\Play_zombie" DurationType="OneShot" DurationMin="0.590501" DurationMax="0.830792">
+					<IncludedMemoryFiles>
+						<File Id="786037089" Language="SFX">
+							<ShortName>zombie5.wav</ShortName>
+							<Path>SFX\zombie5_10C4C929.wem</Path>
+						</File>
+						<File Id="898333519" Language="SFX">
+							<ShortName>Deep Zombie 2.wav</ShortName>
+							<Path>SFX\Deep Zombie 2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="751805364" Name="swoosh" ObjectPath="\Game Parameters\Default Work Unit\swoosh"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1631732167">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

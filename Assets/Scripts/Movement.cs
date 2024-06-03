@@ -40,6 +40,7 @@ public class Movement : MonoBehaviour
     #endregion
 
     #region Attack
+    private float _swooshPower = 0;
     private int _attackCounter;
     private bool _attacking;
     private bool _airAttacking;
@@ -183,13 +184,25 @@ public class Movement : MonoBehaviour
     {
         if (!_attacking && _isGrounded && !_airAttacking)
         {
+            PlaySwoosh();
             BaseAttack();
             StartCoroutine(Attack());
         } 
         else if (!_attacking && !_isGrounded)
         {
+            PlaySwoosh();
             AerialAttack();
         }
+    }
+
+    private void PlaySwoosh()
+    {
+        if (_swooshPower == 4)
+        {
+            _swooshPower = 0;
+        }
+        AkSoundEngine.SetRTPCValue("swoosh", _swooshPower);
+        _swooshPower++;
     }
 
     private void BaseAttack()

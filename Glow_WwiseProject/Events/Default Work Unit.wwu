@@ -14,23 +14,56 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_background" ID="{78D83E92-CE40-43E7-B0F6-D00B8C3748DF}">
-					<ChildrenList>
-						<Action Name="" ID="{09C8C732-E327-4D03-8712-4FC1A65B7B89}" ShortID="41186578">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Zombie Breakout Soundscape" ID="{8C5CF57C-66D9-4F22-B334-BF706EBA6E36}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_sword" ID="{CC3EFAEC-858E-4B71-B257-506D13C371CD}">
 					<ChildrenList>
 						<Action Name="" ID="{F3D455F6-5DA9-4642-87E5-11A6C4327D2A}" ShortID="1045275486">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="sword" ID="{425DC467-C9C8-418A-8165-46E63ED09C8D}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_zombie" ID="{79548FA4-02EF-4DC2-A47F-D3D3E4CFED0C}">
+					<ChildrenList>
+						<Action Name="" ID="{10A5D64C-5BB8-4069-AF58-BA022AB1B5A0}" ShortID="431859327">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="zombie" ID="{0F8985C2-1329-4CA3-9F58-62E66DE388A5}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_background" ID="{1B563A84-E7BE-4BDD-8872-3F3A19F901C8}">
+					<ChildrenList>
+						<Action Name="" ID="{FF3E72C9-D85A-4870-A9FC-A11FE7EC202B}" ShortID="169290831">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Zombie Breakout Soundscape" ID="{C23669EE-40C7-4D2F-A3ED-A035F6CDB945}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_finish" ID="{741BA929-5E29-40D5-956A-3FF0F5780004}">
+					<ChildrenList>
+						<Action Name="" ID="{C2F62C7C-BBD8-48B8-9B33-C44983E22B51}" ShortID="524906150">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sad Movie sounds_01" ID="{3F1C556B-FF6A-4ED8-8951-0EA998E7BE82}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_swoosh" ID="{E2BF4F5A-73BC-4F63-8F04-ABF0355D1EA8}">
+					<ChildrenList>
+						<Action Name="" ID="{92E4F282-E2B4-4B02-B753-C24E5E29E71D}" ShortID="966636584">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="swoosh" ID="{52FBD89A-7B47-4383-9D74-C2C16ED6551B}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

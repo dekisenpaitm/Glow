@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 01b0e15e9319d5409b06590d505a06f5
     GuidInternal: 
-    m_lastTime: -8584848639404217640
+    m_lastTime: -8584841718168341375
     List:
     - name: Glow
       guid: e634ead1b373294eb19ba166876c8e12
@@ -94,10 +94,10 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 3df3203f8deea04db3b69a1a19ef205c
     GuidInternal: 
-    m_lastTime: -8584848639403930012
+    m_lastTime: -8584841718308096711
     List:
     - name: Play_background
-      guid: 923ed87840cee743b0f6d00b8c3748df
+      guid: 843a561bbee7dd4b88723f3a19f901c8
       id: 3196207338
       PathAndIcons:
       - ElementName: Events
@@ -108,11 +108,28 @@ MonoBehaviour:
         guid: 3df3203f8deea04db3b69a1a19ef205c
       - ElementName: Play_background
         ObjectType: 3
-        guid: 923ed87840cee743b0f6d00b8c3748df
+        guid: 843a561bbee7dd4b88723f3a19f901c8
       Path: Events\Default Work Unit\Play_background
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 255.101
+      minDuration: 255.101
+    - name: Play_finish
+      guid: 29a91b74295ed540956a3ff0f5780004
+      id: 1793765179
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3df3203f8deea04db3b69a1a19ef205c
+      - ElementName: Play_finish
+        ObjectType: 3
+        guid: 29a91b74295ed540956a3ff0f5780004
+      Path: Events\Default Work Unit\Play_finish
+      maxAttenuation: 0
+      maxDuration: 180.371
+      minDuration: 180.371
     - name: Play_orbs
       guid: b529a3cc988fe94a9cd2ebd853321e75
       id: 1995773880
@@ -130,6 +147,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.429688
       minDuration: 0.214531
+    - name: Play_swoosh
+      guid: 5a4fbfe2bc73634f8f04abf0355d1ea8
+      id: 2462113679
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3df3203f8deea04db3b69a1a19ef205c
+      - ElementName: Play_swoosh
+        ObjectType: 3
+        guid: 5a4fbfe2bc73634f8f04abf0355d1ea8
+      Path: Events\Default Work Unit\Play_swoosh
+      maxAttenuation: 0
+      maxDuration: 1.123083
+      minDuration: 1.123083
     - name: Play_sword
       guid: ecfa3ecc8e85714bb257506d13c371cd
       id: 1191497377
@@ -145,8 +179,25 @@ MonoBehaviour:
         guid: ecfa3ecc8e85714bb257506d13c371cd
       Path: Events\Default Work Unit\Play_sword
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.33093
+      minDuration: 0.391075
+    - name: Play_zombie
+      guid: a48f5479ef02c24da47fd3d3e4cfed0c
+      id: 246154100
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3df3203f8deea04db3b69a1a19ef205c
+      - ElementName: Play_zombie
+        ObjectType: 3
+        guid: a48f5479ef02c24da47fd3d3e4cfed0c
+      Path: Events\Default Work Unit\Play_zombie
+      maxAttenuation: 0
+      maxDuration: 0.830792
+      minDuration: 0.590501
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -159,8 +210,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 17fed3f569d40b4893781cb1b06c2163
     GuidInternal: 
-    m_lastTime: -8584848800097544618
-    List: []
+    m_lastTime: -8584841704909642776
+    List:
+    - name: swoosh
+      guid: 5c15390103217044b9a0c59886c827ef
+      id: 751805364
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 17fed3f569d40b4893781cb1b06c2163
+      - ElementName: swoosh
+        ObjectType: 13
+        guid: 5c15390103217044b9a0c59886c827ef
+      Path: Game Parameters\Default Work Unit\swoosh
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -173,8 +238,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 287d405a0335a54d82714fa7572b4496
     GuidInternal: 
-    m_lastTime: -8584848800098271196
-    List: []
+    m_lastTime: -8584841770379903708
+    List:
+    - name: music
+      guid: 2e697ba8f5a5154ea11a31cac4f89bd0
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 287d405a0335a54d82714fa7572b4496
+      - ElementName: music
+        ObjectType: 9
+        guid: 2e697ba8f5a5154ea11a31cac4f89bd0
+      Path: States\Default Work Unit\music
+      values:
+      - name: background
+        guid: 2ddcff67136693439fff046198c38444
+        id: 3650723969
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 287d405a0335a54d82714fa7572b4496
+        - ElementName: music
+          ObjectType: 9
+          guid: 2e697ba8f5a5154ea11a31cac4f89bd0
+        - ElementName: background
+          ObjectType: 8
+          guid: 2ddcff67136693439fff046198c38444
+      - name: finish
+        guid: ed496f4fb4c0c84e81c69cca26f55282
+        id: 2555741448
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 287d405a0335a54d82714fa7572b4496
+        - ElementName: music
+          ObjectType: 9
+          guid: 2e697ba8f5a5154ea11a31cac4f89bd0
+        - ElementName: finish
+          ObjectType: 8
+          guid: ed496f4fb4c0c84e81c69cca26f55282
+      - name: None
+        guid: b099deecd8131c4f8c7c269480481ddb
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 287d405a0335a54d82714fa7572b4496
+        - ElementName: music
+          ObjectType: 9
+          guid: 2e697ba8f5a5154ea11a31cac4f89bd0
+        - ElementName: None
+          ObjectType: 8
+          guid: b099deecd8131c4f8c7c269480481ddb
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -204,7 +335,7 @@ MonoBehaviour:
     m_lastTime: -8584848800097624715
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000b0000000c0000000d0000000e00000026000000270000006f000000700000009c0000009d000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000b0000000c0000000d0000000e0000000f00000010000000110000001200000013000000180000001900000026000000270000006f0000007000000096000000970000009c0000009d000000
   AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0

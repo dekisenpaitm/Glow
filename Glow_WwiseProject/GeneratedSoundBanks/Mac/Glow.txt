@@ -1,16 +1,38 @@
 Event	ID	Name			Wwise Object Path	Notes
+	246154100	Play_zombie			\Default Work Unit\Play_zombie	
 	1191497377	Play_sword			\Default Work Unit\Play_sword	
+	1793765179	Play_finish			\Default Work Unit\Play_finish	
 	1995773880	Play_orbs			\Default Work Unit\Play_orbs	
+	2462113679	Play_swoosh			\Default Work Unit\Play_swoosh	
 	3196207338	Play_background			\Default Work Unit\Play_background	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	music			\Default Work Unit\music	
+
+State	ID	Name	State Group			Notes
+	748895195	None	music			
+	2555741448	finish	music			
+	3650723969	background	music			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	680215206	finish	music	\Actor-Mixer Hierarchy\Default Work Unit\music\Zombie Breakout Soundscape		
+	1030793694	background	music	\Actor-Mixer Hierarchy\Default Work Unit\music\Sad Movie sounds_01		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	751805364	swoosh			\Default Work Unit\swoosh	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	64916704	Retro coin collect 2	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\Retro coin collect 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\orbs\Retro coin collect 2		41314
 	117066013	Retro coin collect 1	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\Retro coin collect 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\orbs\Retro coin collect 1		26012
+	177099968	Zombie Breakout Soundscape	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\Zombie Breakout Soundscape_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\music\Zombie Breakout Soundscape		48979456
 	371088928	sword_1	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\06SWORD02.aif_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword\sword_1		54818
+	444349153	Swing 1_10	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\Swing 1_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\swoosh\Swing 1_10		129384
 	580428230	sword_2	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\06SWORD06.aif_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword\sword_2		82908
+	632184258	Swing 1_1	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\Swing 1_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\swoosh\Swing 1_1		215696
 	652543009	sword_3	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\Sword_Clash (27)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword\sword_3		117452
 	663997371	Retro coin collect 3	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\Retro coin collect 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\orbs\Retro coin collect 3		30394
-
-Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	177099968	Zombie Breakout Soundscape	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\Zombie Breakout Soundscape_54D7BDF6.wem	177099968.wem	\Actor-Mixer Hierarchy\Default Work Unit\music\Zombie Breakout Soundscape	
+	750011000	Swing 1_14	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\Swing 1_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\swoosh\Swing 1_14		137880
+	786037089	zombie5	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\zombie5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\zombie\zombie5		73792
+	854596543	Sad Movie sounds_01	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\Sad Movie sounds_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\music\Sad Movie sounds_01		31817508
+	898333519	Deep Zombie 2	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Mac\SFX\Deep Zombie 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\zombie\Deep Zombie 2		159576
 
