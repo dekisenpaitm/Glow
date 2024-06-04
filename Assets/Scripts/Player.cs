@@ -29,6 +29,8 @@ public class Player : MonoBehaviour, IHitable
 
     private void Start()
     {
+        AkSoundEngine.Suspend();
+        AkSoundEngine.WakeupFromSuspend();
         currentHealth = maxHealth;
         GameManager.instance.Health = maxHealth;
         _anim = GetComponent<HumanoidAnimationController>();

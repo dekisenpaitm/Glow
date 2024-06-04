@@ -3,6 +3,7 @@
 	<Plugins>
 		<Plugin Name="Wwise Delay" ID="6946819" DLL="AkDelay" StaticLib="AkDelayFX"/>
 		<Plugin Name="Wwise Guitar Distortion" ID="8257539" DLL="AkGuitarDistortion" StaticLib="AkGuitarDistortionFX"/>
+		<Plugin Name="Wwise Time Stretch" ID="8519683" DLL="AkTimeStretch" StaticLib="AkTimeStretchFX"/>
 		<Plugin Name="System" ID="11403271"/>
 		<Plugin Name="No Output" ID="11862023"/>
 	</Plugins>

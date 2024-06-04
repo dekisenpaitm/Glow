@@ -10,10 +10,12 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	608898761	dungeon			\Default Work Unit\Master Audio Bus\dungeon	
 	1280402566	demonic			\Default Work Unit\Master Audio Bus\demonic	
 
 Effect plug-ins	ID	Name	Type				Notes
-	1588715066	Echoes_Linear	Wwise Delay			
+	3216246379	Space_Dreaming	Wwise RoomVerb			
+	3442768367	Hall_Large_Dark	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

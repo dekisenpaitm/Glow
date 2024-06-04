@@ -8,15 +8,22 @@
 						<ObjectRef Name="Play_finish" ID="{741BA929-5E29-40D5-956A-3FF0F5780004}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_scream" ID="{6F0B1BD7-6064-43A8-AF08-E7419A9D41A8}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_snack" ID="{E3E5FFCE-2728-4943-853C-E35E27D10E4D}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Resume_steps" ID="{A2CF77B3-50E2-496E-A62F-9280D256FA2D}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_steps" ID="{7782D42E-1103-4AA0-B346-D12134EA813E}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_orbs" ID="{CCA329B5-8F98-4AE9-9CD2-EBD853321E75}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_sword" ID="{CC3EFAEC-858E-4B71-B257-506D13C371CD}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_background" ID="{1B563A84-E7BE-4BDD-8872-3F3A19F901C8}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_radio" ID="{75F6136F-DD88-4CA2-B5DF-B08FEC4D726E}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_zombie" ID="{79548FA4-02EF-4DC2-A47F-D3D3E4CFED0C}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Pause_steps" ID="{17F095D7-52C5-4DF4-8190-FFB9FF496B7B}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_help" ID="{C7C35AA8-5324-4F49-BA67-E749C24609DA}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_swoosh" ID="{E2BF4F5A-73BC-4F63-8F04-ABF0355D1EA8}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Dungeon" ID="{6035B002-DE9F-4AE2-B5CA-9E98B9A5DA0B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_sword" ID="{CC3EFAEC-858E-4B71-B257-506D13C371CD}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_dungeon" ID="{36A9B2AA-26D7-4D9F-A6C9-26A8205A651D}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_swoosh" ID="{E2BF4F5A-73BC-4F63-8F04-ABF0355D1EA8}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

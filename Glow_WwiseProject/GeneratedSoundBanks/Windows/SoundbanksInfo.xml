@@ -20,12 +20,61 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="668088558" Language="SFX" Hash="813682473">
+		<SoundBank Id="608898761" Language="SFX" Hash="1309674512">
+			<ObjectPath>\SoundBanks\Default Work Unit\Dungeon</ObjectPath>
+			<ShortName>Dungeon</ShortName>
+			<Path>Dungeon.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1754227292" Name="Play_dungeon" ObjectPath="\Events\Default Work Unit\Play_dungeon" DurationType="OneShot" DurationMin="147.00499" DurationMax="147.00499">
+					<IncludedMemoryFiles>
+						<File Id="792729905" Language="SFX">
+							<ShortName>Dungeon Horror Atmosphere.wav</ShortName>
+							<Path>SFX\Dungeon Horror Atmosphere_F58AE4B6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2462113679" Name="Play_swoosh" ObjectPath="\Events\Default Work Unit\Play_swoosh" DurationType="OneShot" DurationMin="1.123083" DurationMax="1.123083">
+					<IncludedMemoryFiles>
+						<File Id="444349153" Language="SFX">
+							<ShortName>Swing 1_10.wav</ShortName>
+							<Path>SFX\Swing 1_10_1C768395.wem</Path>
+						</File>
+						<File Id="632184258" Language="SFX">
+							<ShortName>Swing 1_1.wav</ShortName>
+							<Path>SFX\Swing 1_1_1C768395.wem</Path>
+						</File>
+						<File Id="750011000" Language="SFX">
+							<ShortName>Swing 1_14.wav</ShortName>
+							<Path>SFX\Swing 1_14_1C768395.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1191497377" Name="Play_sword" ObjectPath="\Events\Default Work Unit\Play_sword" DurationType="OneShot" DurationMin="0.391075" DurationMax="1.33093">
+					<IncludedMemoryFiles>
+						<File Id="371088928" Language="SFX">
+							<ShortName>06SWORD02.aif.wav</ShortName>
+							<Path>SFX\06SWORD02.aif_1C768395.wem</Path>
+						</File>
+						<File Id="580428230" Language="SFX">
+							<ShortName>06SWORD06.aif.wav</ShortName>
+							<Path>SFX\06SWORD06.aif_1C768395.wem</Path>
+						</File>
+						<File Id="652543009" Language="SFX">
+							<ShortName>Sword_Clash (27).wav</ShortName>
+							<Path>SFX\Sword_Clash (27)_1C768395.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="751805364" Name="swoosh" ObjectPath="\Game Parameters\Default Work Unit\swoosh"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="668088558" Language="SFX" Hash="3240422685">
 			<ObjectPath>\SoundBanks\Default Work Unit\Glow</ObjectPath>
 			<ShortName>Glow</ShortName>
 			<Path>Glow.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2011001937" Name="Pause_steps" ObjectPath="\Events\Default Work Unit\Pause_steps" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="3196207338" Name="Play_background" ObjectPath="\Events\Default Work Unit\Play_background" DurationType="Infinite">
 					<ReferencedStreamedFiles>
 						<File Id="177099968" Language="SFX">
@@ -169,7 +218,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="869564952" Name="Resume_steps" ObjectPath="\Events\Default Work Unit\Resume_steps" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="751805364" Name="swoosh" ObjectPath="\Game Parameters\Default Work Unit\swoosh"/>
@@ -185,11 +233,12 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="226930426">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3165549362">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
+				<AuxBus Id="608898761" Name="dungeon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\dungeon"/>
 				<AuxBus Id="1280402566" Name="demonic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\demonic"/>
 			</IncludedAuxBusses>
 		</SoundBank>

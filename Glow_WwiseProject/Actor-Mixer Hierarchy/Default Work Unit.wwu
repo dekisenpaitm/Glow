@@ -1181,6 +1181,7 @@
 				</BlendContainer>
 				<SwitchContainer Name="steps" ID="{98854454-BC41-456F-8C9A-22D92008463F}" ShortID="412167599">
 					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>1</Value>
@@ -1238,10 +1239,20 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="steps_heavy" ID="{DBE1C495-5AF3-4C7C-AD03-A18D1C9E7EC5}" ShortID="217005627">
 							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-19</Value>
@@ -1268,7 +1279,17 @@
 							<ChildrenList>
 								<Sound Name="Knight Left Footstep on Gravel 3 (With Chainmail)" ID="{377F7FC2-C2CA-43EA-9482-109C1EF1C3FD}" ShortID="986744359">
 									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1293,6 +1314,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Knight Right Footstep on Gravel 3 (With Chainmail)" ID="{21271DFC-086C-47F4-A1D0-B9E1ECCD8065}" ShortID="557439898">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
@@ -1348,6 +1381,18 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="StepOnWood-005" ID="{C1D490AF-A001-42F9-B570-EF363659BE3B}" ShortID="624980796">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
@@ -1371,6 +1416,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="StepOnWood-001" ID="{B8044EA9-0D15-40B0-B7A3-40FAC670F02E}" ShortID="123325053">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
@@ -1427,6 +1484,67 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<ActorMixer Name="dungeon" ID="{F17E717F-2BB1-4902-899F-B1EC860A7560}" ShortID="661265485">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Dungeon Horror Atmosphere" ID="{DD4E82C4-8093-4C2F-8A67-AEAECD7109F0}" ShortID="374765202">
+							<PropertyList>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-20</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="music" ID="{5D70B6CF-C43B-4988-96E2-13CA2FCE3616}" WorkUnitID="{9606F0AD-7F6D-424A-86F8-FD3AF3DBBB26}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dungeon Horror Atmosphere" ID="{E97B38FA-2996-456F-8265-DBC9B9040A13}">
+									<Language>SFX</Language>
+									<AudioFile>Dungeon Horror Atmosphere.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="792729905"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="music" ID="{A87B692E-A5F5-4E15-A11A-31CAC4F89BD0}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="background" ID="{67FFDC2D-6613-4393-9FFF-046198C38444}"/>
+										<CustomState Name="" ID="{22934A2B-4389-4EEB-AFAB-8A9C0529DE80}" ShortID="440570627"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="finish" ID="{4F6F49ED-C0B4-4EC8-81C6-9CCA26F55282}"/>
+										<CustomState Name="" ID="{9F4F08D7-EB2B-4226-90B7-C6D374FB1FFE}" ShortID="668048619"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dungeon Horror Atmosphere" ID="{E97B38FA-2996-456F-8265-DBC9B9040A13}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

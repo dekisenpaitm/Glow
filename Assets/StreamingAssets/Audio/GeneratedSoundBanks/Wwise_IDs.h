@@ -13,8 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PAUSE_STEPS = 2011001937U;
         static const AkUniqueID PLAY_BACKGROUND = 3196207338U;
+        static const AkUniqueID PLAY_DUNGEON = 1754227292U;
         static const AkUniqueID PLAY_FINISH = 1793765179U;
         static const AkUniqueID PLAY_HELP = 2454594115U;
         static const AkUniqueID PLAY_ORBS = 1995773880U;
@@ -25,7 +25,6 @@ namespace AK
         static const AkUniqueID PLAY_SWOOSH = 2462113679U;
         static const AkUniqueID PLAY_SWORD = 1191497377U;
         static const AkUniqueID PLAY_ZOMBIE = 246154100U;
-        static const AkUniqueID RESUME_STEPS = 869564952U;
     } // namespace EVENTS
 
     namespace STATES
@@ -69,6 +68,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID DUNGEON = 608898761U;
         static const AkUniqueID GLOW = 668088558U;
     } // namespace BANKS
 
@@ -80,6 +80,7 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID DEMONIC = 1280402566U;
+        static const AkUniqueID DUNGEON = 608898761U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

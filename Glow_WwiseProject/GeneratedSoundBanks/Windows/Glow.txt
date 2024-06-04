@@ -1,11 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	190684084	Play_snack			\Default Work Unit\Play_snack	
 	246154100	Play_zombie			\Default Work Unit\Play_zombie	
-	869564952	Resume_steps			\Default Work Unit\Resume_steps	
 	1191497377	Play_sword			\Default Work Unit\Play_sword	
 	1793765179	Play_finish			\Default Work Unit\Play_finish	
 	1995773880	Play_orbs			\Default Work Unit\Play_orbs	
-	2011001937	Pause_steps			\Default Work Unit\Pause_steps	
 	2454594115	Play_help			\Default Work Unit\Play_help	
 	2462113679	Play_swoosh			\Default Work Unit\Play_swoosh	
 	2470536401	Play_scream			\Default Work Unit\Play_scream	

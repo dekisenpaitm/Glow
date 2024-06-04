@@ -20,7 +20,101 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="668088558" Language="SFX" Hash="1319032910">
+		<SoundBank Id="608898761" Language="SFX" Hash="1338994043">
+			<ObjectPath>\SoundBanks\Default Work Unit\Dungeon</ObjectPath>
+			<ShortName>Dungeon</ShortName>
+			<Path>Dungeon.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1754227292" Name="Play_dungeon" ObjectPath="\Events\Default Work Unit\Play_dungeon" DurationType="OneShot" DurationMin="147.00499" DurationMax="147.00499">
+					<IncludedMemoryFiles>
+						<File Id="792729905" Language="SFX">
+							<ShortName>Dungeon Horror Atmosphere.wav</ShortName>
+							<Path>SFX\Dungeon Horror Atmosphere_1C768395.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2600469463" Name="Play_steps" ObjectPath="\Events\Default Work Unit\Play_steps" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="293119553" Language="SFX">
+							<ShortName>Knight Right Footstep on Gravel 3 (With Chainmail).wav</ShortName>
+							<Path>SFX\Knight Right Footstep on Gravel 3 (With Chainmail)_1C768395.wem</Path>
+						</File>
+						<File Id="382547938" Language="SFX">
+							<ShortName>Knight Left Footstep on Gravel 3 (With Chainmail).wav</ShortName>
+							<Path>SFX\Knight Left Footstep on Gravel 3 (With Chainmail)_1C768395.wem</Path>
+						</File>
+						<File Id="717616308" Language="SFX">
+							<ShortName>StepOnWood-005.wav</ShortName>
+							<Path>SFX\StepOnWood-005_1C768395.wem</Path>
+						</File>
+						<File Id="927464713" Language="SFX">
+							<ShortName>StepOnWood-001.wav</ShortName>
+							<Path>SFX\StepOnWood-001_1C768395.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{A57B4D50-FFF8-4821-9EC7-B6A36F39988D}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{39240C35-1643-4926-AC3A-C29009A083AC}">
+							<Media>
+								<File Id="717616308"/>
+								<File Id="927464713"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A57B4D50-FFF8-4821-9EC7-B6A36F39988D}">
+							<Media>
+								<File Id="293119553"/>
+								<File Id="382547938"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2462113679" Name="Play_swoosh" ObjectPath="\Events\Default Work Unit\Play_swoosh" DurationType="OneShot" DurationMin="1.123083" DurationMax="1.123083">
+					<IncludedMemoryFiles>
+						<File Id="444349153" Language="SFX">
+							<ShortName>Swing 1_10.wav</ShortName>
+							<Path>SFX\Swing 1_10_1C768395.wem</Path>
+						</File>
+						<File Id="632184258" Language="SFX">
+							<ShortName>Swing 1_1.wav</ShortName>
+							<Path>SFX\Swing 1_1_1C768395.wem</Path>
+						</File>
+						<File Id="750011000" Language="SFX">
+							<ShortName>Swing 1_14.wav</ShortName>
+							<Path>SFX\Swing 1_14_1C768395.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1191497377" Name="Play_sword" ObjectPath="\Events\Default Work Unit\Play_sword" DurationType="OneShot" DurationMin="0.391075" DurationMax="1.33093">
+					<IncludedMemoryFiles>
+						<File Id="371088928" Language="SFX">
+							<ShortName>06SWORD02.aif.wav</ShortName>
+							<Path>SFX\06SWORD02.aif_1C768395.wem</Path>
+						</File>
+						<File Id="580428230" Language="SFX">
+							<ShortName>06SWORD06.aif.wav</ShortName>
+							<Path>SFX\06SWORD06.aif_1C768395.wem</Path>
+						</File>
+						<File Id="652543009" Language="SFX">
+							<ShortName>Sword_Clash (27).wav</ShortName>
+							<Path>SFX\Sword_Clash (27)_1C768395.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="751805364" Name="swoosh" ObjectPath="\Game Parameters\Default Work Unit\swoosh"/>
+				<GameParameter Id="2649703675" Name="moving" ObjectPath="\Game Parameters\Default Work Unit\moving"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="1088209313" Name="floor" ObjectPath="\Switches\Default Work Unit\floor" GUID="{6D02092F-03BA-4A65-A8C2-6573A8734820}">
+					<Switches>
+						<Switch Id="2732489590" Name="heavy" ObjectPath="\Switches\Default Work Unit\floor\heavy" GUID="{A57B4D50-FFF8-4821-9EC7-B6A36F39988D}"/>
+						<Switch Id="2058049674" Name="wood" ObjectPath="\Switches\Default Work Unit\floor\wood" GUID="{39240C35-1643-4926-AC3A-C29009A083AC}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="668088558" Language="SFX" Hash="813682473">
 			<ObjectPath>\SoundBanks\Default Work Unit\Glow</ObjectPath>
 			<ShortName>Glow</ShortName>
 			<Path>Glow.bnk</Path>
@@ -90,7 +184,41 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2600469463" Name="Play_steps" ObjectPath="\Events\Default Work Unit\Play_steps" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2600469463" Name="Play_steps" ObjectPath="\Events\Default Work Unit\Play_steps" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="293119553" Language="SFX">
+							<ShortName>Knight Right Footstep on Gravel 3 (With Chainmail).wav</ShortName>
+							<Path>SFX\Knight Right Footstep on Gravel 3 (With Chainmail)_1C768395.wem</Path>
+						</File>
+						<File Id="382547938" Language="SFX">
+							<ShortName>Knight Left Footstep on Gravel 3 (With Chainmail).wav</ShortName>
+							<Path>SFX\Knight Left Footstep on Gravel 3 (With Chainmail)_1C768395.wem</Path>
+						</File>
+						<File Id="717616308" Language="SFX">
+							<ShortName>StepOnWood-005.wav</ShortName>
+							<Path>SFX\StepOnWood-005_1C768395.wem</Path>
+						</File>
+						<File Id="927464713" Language="SFX">
+							<ShortName>StepOnWood-001.wav</ShortName>
+							<Path>SFX\StepOnWood-001_1C768395.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{A57B4D50-FFF8-4821-9EC7-B6A36F39988D}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{39240C35-1643-4926-AC3A-C29009A083AC}">
+							<Media>
+								<File Id="717616308"/>
+								<File Id="927464713"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A57B4D50-FFF8-4821-9EC7-B6A36F39988D}">
+							<Media>
+								<File Id="293119553"/>
+								<File Id="382547938"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="2462113679" Name="Play_swoosh" ObjectPath="\Events\Default Work Unit\Play_swoosh" DurationType="OneShot" DurationMin="1.123083" DurationMax="1.123083">
 					<IncludedMemoryFiles>
 						<File Id="444349153" Language="SFX">
@@ -139,10 +267,19 @@
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="751805364" Name="swoosh" ObjectPath="\Game Parameters\Default Work Unit\swoosh"/>
+				<GameParameter Id="2649703675" Name="moving" ObjectPath="\Game Parameters\Default Work Unit\moving"/>
 				<GameParameter Id="3677180323" Name="health" ObjectPath="\Game Parameters\Default Work Unit\health"/>
 			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="1088209313" Name="floor" ObjectPath="\Switches\Default Work Unit\floor" GUID="{6D02092F-03BA-4A65-A8C2-6573A8734820}">
+					<Switches>
+						<Switch Id="2732489590" Name="heavy" ObjectPath="\Switches\Default Work Unit\floor\heavy" GUID="{A57B4D50-FFF8-4821-9EC7-B6A36F39988D}"/>
+						<Switch Id="2058049674" Name="wood" ObjectPath="\Switches\Default Work Unit\floor\wood" GUID="{39240C35-1643-4926-AC3A-C29009A083AC}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1491259906">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2893646768">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

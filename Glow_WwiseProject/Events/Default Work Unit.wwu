@@ -124,29 +124,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Pause_steps" ID="{17F095D7-52C5-4DF4-8190-FFB9FF496B7B}">
+				<Event Name="Play_dungeon" ID="{36A9B2AA-26D7-4D9F-A6C9-26A8205A651D}">
 					<ChildrenList>
-						<Action Name="" ID="{D4C0B60B-E4FE-452B-B842-433F2F9299D6}" ShortID="157902343">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="7"/>
-							</PropertyList>
+						<Action Name="" ID="{EF1F8F24-1217-4FF2-89B3-54D2346689C9}" ShortID="665325214">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="steps" ID="{98854454-BC41-456F-8C9A-22D92008463F}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Resume_steps" ID="{A2CF77B3-50E2-496E-A62F-9280D256FA2D}">
-					<ChildrenList>
-						<Action Name="" ID="{C994392C-B10B-4702-B7C6-EF3B34523A16}" ShortID="718080058">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="9"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="steps" ID="{98854454-BC41-456F-8C9A-22D92008463F}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+									<ObjectRef Name="Dungeon Horror Atmosphere" ID="{DD4E82C4-8093-4C2F-8A67-AEAECD7109F0}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

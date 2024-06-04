@@ -1,0 +1,25 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1191497377	Play_sword			\Default Work Unit\Play_sword	
+	1754227292	Play_dungeon			\Default Work Unit\Play_dungeon	
+	2462113679	Play_swoosh			\Default Work Unit\Play_swoosh	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	music			\Default Work Unit\music	
+
+State	ID	Name	State Group			Notes
+	748895195	None	music			
+	2555741448	finish	music			
+	3650723969	background	music			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	751805364	swoosh			\Default Work Unit\swoosh	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	371088928	sword_1	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\06SWORD02.aif_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword\sword_1		4591
+	444349153	Swing 1_10	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Swing 1_10_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\swoosh\Swing 1_10		3858
+	580428230	sword_2	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\06SWORD06.aif_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword\sword_2		6915
+	632184258	Swing 1_1	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Swing 1_1_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\swoosh\Swing 1_1		5845
+	652543009	sword_3	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Sword_Clash (27)_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword\sword_3		10759
+	750011000	Swing 1_14	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Swing 1_14_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\swoosh\Swing 1_14		4271
+	792729905	Dungeon Horror Atmosphere	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Dungeon Horror Atmosphere_F58AE4B6.wem		\Actor-Mixer Hierarchy\Default Work Unit\dungeon\Dungeon Horror Atmosphere		2082527
+

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 181c0bc6637fd449803ba6faa2d05d1b
     GuidInternal: 
-    m_lastTime: -8584840902490714795
+    m_lastTime: -8584840819146261978
     List:
     - name: demonic
       guid: ea909d9811a9b648acc1236fca16fc36
@@ -57,6 +57,23 @@ MonoBehaviour:
         ObjectType: 1
         guid: ea909d9811a9b648acc1236fca16fc36
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\demonic
+    - name: dungeon
+      guid: 837234f11eb228428a1d9fd28e549fbd
+      id: 608898761
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 181c0bc6637fd449803ba6faa2d05d1b
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: dungeon
+        ObjectType: 1
+        guid: 837234f11eb228428a1d9fd28e549fbd
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\dungeon
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -83,8 +100,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 01b0e15e9319d5409b06590d505a06f5
     GuidInternal: 
-    m_lastTime: -8584840878779204904
+    m_lastTime: -8584840820371100844
     List:
+    - name: Dungeon
+      guid: 02b035609fdee24ab5ca9e98b9a5da0b
+      id: 608898761
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 01b0e15e9319d5409b06590d505a06f5
+      - ElementName: Dungeon
+        ObjectType: 7
+        guid: 02b035609fdee24ab5ca9e98b9a5da0b
+      Path: SoundBanks\Default Work Unit\Dungeon
     - name: Glow
       guid: e634ead1b373294eb19ba166876c8e12
       id: 668088558
@@ -111,25 +142,8 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 3df3203f8deea04db3b69a1a19ef205c
     GuidInternal: 
-    m_lastTime: -8584840879111018656
+    m_lastTime: -8584840823428429327
     List:
-    - name: Pause_steps
-      guid: d795f017c552f44d8190ffb9ff496b7b
-      id: 2011001937
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 3df3203f8deea04db3b69a1a19ef205c
-      - ElementName: Pause_steps
-        ObjectType: 3
-        guid: d795f017c552f44d8190ffb9ff496b7b
-      Path: Events\Default Work Unit\Pause_steps
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: Play_background
       guid: 843a561bbee7dd4b88723f3a19f901c8
       id: 3196207338
@@ -147,6 +161,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_dungeon
+      guid: aab2a936d7269f4da6c926a8205a651d
+      id: 1754227292
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3df3203f8deea04db3b69a1a19ef205c
+      - ElementName: Play_dungeon
+        ObjectType: 3
+        guid: aab2a936d7269f4da6c926a8205a651d
+      Path: Events\Default Work Unit\Play_dungeon
+      maxAttenuation: 0
+      maxDuration: 147.00499
+      minDuration: 147.00499
     - name: Play_finish
       guid: 29a91b74295ed540956a3ff0f5780004
       id: 1793765179
@@ -264,8 +295,8 @@ MonoBehaviour:
         guid: 2ed482770311a04ab346d12134ea813e
       Path: Events\Default Work Unit\Play_steps
       maxAttenuation: 0
-      maxDuration: 0.832625
-      minDuration: 0.449456
+      maxDuration: -1
+      minDuration: -1
     - name: Play_swoosh
       guid: 5a4fbfe2bc73634f8f04abf0355d1ea8
       id: 2462113679
@@ -317,23 +348,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.830792
       minDuration: 0.590501
-    - name: Resume_steps
-      guid: b377cfa2e2506e49a62f9280d256fa2d
-      id: 869564952
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 3df3203f8deea04db3b69a1a19ef205c
-      - ElementName: Resume_steps
-        ObjectType: 3
-        guid: b377cfa2e2506e49a62f9280d256fa2d
-      Path: Events\Default Work Unit\Resume_steps
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -549,7 +563,7 @@ MonoBehaviour:
     m_lastTime: -8584848800097624715
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000b0000000c0000000d0000000e0000000f00000010000000110000001200000013000000150000001600000018000000190000001b0000001c0000001d00000026000000270000006f0000007000000096000000970000009c0000009d000000
+  ExpandedWaapiItemIds: 010000000200000003000000040000000500000006000000070000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000015000000160000001700000018000000190000001b0000001c0000001d000000260000002700000038000000390000006f0000007000000096000000970000009c0000009d000000
   AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0
