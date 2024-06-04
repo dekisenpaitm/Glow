@@ -710,7 +710,8 @@
 								<Property Name="HFRatio" Type="Real32" Value="6"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
 								<Property Name="PreDelay" Type="Real32" Value="0.1"/>
-								<Property Name="WetLevel" Type="Real32" Value="-30"/>
+								<Property Name="ReverbTime" Type="Real32" Value="4.1"/>
+								<Property Name="WetLevel" Type="Real32" Value="-15"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Medium_Room1" ID="{71B802A7-03E2-4998-B241-B2B84FE9DDFF}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
@@ -1681,9 +1682,9 @@
 						<Effect Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
 							<PropertyList>
 								<Property Name="DryLevel" Type="Real32" Value="-3"/>
-								<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
+								<Property Name="Voice1Pitch" Type="Real32" Value="-800"/>
 								<Property Name="Voice2Enable" Type="bool" Value="True"/>
-								<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+								<Property Name="Voice2Pitch" Type="Real32" Value="-400"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Secret_message" ID="{2F5DE612-1AAD-4A84-8FB4-3E66521C920E}" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">

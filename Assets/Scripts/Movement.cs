@@ -63,6 +63,7 @@ public class Movement : MonoBehaviour
 
     void Start()
     {
+        AkSoundEngine.PostEvent("Play_steps", gameObject);
         _dashTrail = GetComponent<TrailRenderer>();
         _knock = FindObjectOfType<EnemyKnockback>();
         _trail = FindObjectOfType<TrailEnabler>();
@@ -101,16 +102,22 @@ public class Movement : MonoBehaviour
         if (!_attacking)
         {
             _rb.velocity = new Vector3(_moveVector.x, _velocity, _moveVector.y) * _speed;
-        }
+        } 
 
         if(_rb.velocity.x != 0 || _rb.velocity.z != 0)
         {
+            if (_isGrounded)
+            {
+                AkSoundEngine.SetRTPCValue("moving", 1);
+            }
             _playerAnim.PlayRunning();
             RotatePlayer();
         }
         else
         {
+            AkSoundEngine.SetRTPCValue("moving", 0);
             _playerAnim.PlayIdle();
+            
         }
     }
 

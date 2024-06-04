@@ -9,6 +9,16 @@
 							<ObjectRef Name="System" ID="{6B40C1AF-D593-437E-9C8F-C35F02EC570B}" WorkUnitID="{E46A86CF-20E5-4ECB-B444-704E4B7C6643}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="demonic" ID="{989D90EA-A911-48B6-ACC1-236FCA16FC36}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+									<ObjectRef Name="Echoes_Linear" ID="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</AuxBus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

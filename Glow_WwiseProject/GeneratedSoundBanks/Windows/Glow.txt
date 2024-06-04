@@ -1,10 +1,24 @@
 Event	ID	Name			Wwise Object Path	Notes
+	190684084	Play_snack			\Default Work Unit\Play_snack	
 	246154100	Play_zombie			\Default Work Unit\Play_zombie	
+	869564952	Resume_steps			\Default Work Unit\Resume_steps	
 	1191497377	Play_sword			\Default Work Unit\Play_sword	
 	1793765179	Play_finish			\Default Work Unit\Play_finish	
 	1995773880	Play_orbs			\Default Work Unit\Play_orbs	
+	2011001937	Pause_steps			\Default Work Unit\Pause_steps	
+	2454594115	Play_help			\Default Work Unit\Play_help	
 	2462113679	Play_swoosh			\Default Work Unit\Play_swoosh	
+	2470536401	Play_scream			\Default Work Unit\Play_scream	
+	2600469463	Play_steps			\Default Work Unit\Play_steps	
+	2953849999	Play_radio			\Default Work Unit\Play_radio	
 	3196207338	Play_background			\Default Work Unit\Play_background	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1088209313	floor			\Default Work Unit\floor	
+
+Switch	ID	Name	Switch Group			Notes
+	2058049674	wood	floor			
+	2732489590	heavy	floor			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3991942870	music			\Default Work Unit\music	
@@ -20,19 +34,36 @@ Custom State	ID	Name	State Group	Owner		Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	751805364	swoosh			\Default Work Unit\swoosh	
+	2649703675	moving			\Default Work Unit\moving	
+	3677180323	health			\Default Work Unit\health	
+
+Effect plug-ins	ID	Name	Type				Notes
+	159488734	Wwise Time Stretch (Custom)	Wwise Time Stretch			
+	455030490	Wwise Guitar Distortion (Custom)	Wwise Guitar Distortion			
+	810456226	Wwise Time Stretch (Custom)	Wwise Time Stretch			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	64916704	Retro coin collect 2	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Retro coin collect 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\orbs\Retro coin collect 2		41314
-	117066013	Retro coin collect 1	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Retro coin collect 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\orbs\Retro coin collect 1		26012
-	177099968	Zombie Breakout Soundscape	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Zombie Breakout Soundscape_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\music\Zombie Breakout Soundscape		48979456
-	371088928	sword_1	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\06SWORD02.aif_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword\sword_1		54818
-	444349153	Swing 1_10	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Swing 1_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\swoosh\Swing 1_10		129384
-	580428230	sword_2	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\06SWORD06.aif_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword\sword_2		82908
-	632184258	Swing 1_1	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Swing 1_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\swoosh\Swing 1_1		215696
-	652543009	sword_3	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Sword_Clash (27)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword\sword_3		117452
-	663997371	Retro coin collect 3	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Retro coin collect 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\orbs\Retro coin collect 3		30394
-	750011000	Swing 1_14	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Swing 1_14_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\swoosh\Swing 1_14		137880
-	786037089	zombie5	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\zombie5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\zombie\zombie5		73792
-	854596543	Sad Movie sounds_01	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Sad Movie sounds_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\music\Sad Movie sounds_01		31817508
-	898333519	Deep Zombie 2	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Deep Zombie 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\zombie\Deep Zombie 2		159576
+	64916704	Retro coin collect 2	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Retro coin collect 2_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\orbs\Retro coin collect 2		2822
+	117066013	Retro coin collect 1	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Retro coin collect 1_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\orbs\Retro coin collect 1		1921
+	167941320	Cry for help- Collective	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Cry for help- Collective_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cry for help- Collective		64272
+	293119553	Knight Right Footstep on Gravel 3 (With Chainmail)	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Knight Right Footstep on Gravel 3 (With Chainmail)_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\steps_heavy\Knight Right Footstep on Gravel 3 (With Chainmail)		3977
+	371088928	sword_1	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\06SWORD02.aif_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword\sword_1		4591
+	382547938	Knight Left Footstep on Gravel 3 (With Chainmail)	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Knight Left Footstep on Gravel 3 (With Chainmail)_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\steps_heavy\Knight Left Footstep on Gravel 3 (With Chainmail)		5002
+	392492340	2 Zombies eating	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\2 Zombies eating_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\2 Zombies eating		248273
+	444349153	Swing 1_10	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Swing 1_10_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\swoosh\Swing 1_10		3858
+	547258487	EAS Warning of Civil unrest and or Zombies	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\EAS Warning of Civil unrest and or Zombies_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\EAS Warning of Civil unrest and or Zombies		746721
+	580428230	sword_2	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\06SWORD06.aif_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword\sword_2		6915
+	632184258	Swing 1_1	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Swing 1_1_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\swoosh\Swing 1_1		5845
+	652543009	sword_3	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Sword_Clash (27)_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\sword\sword_3		10759
+	663997371	Retro coin collect 3	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Retro coin collect 3_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\orbs\Retro coin collect 3		2556
+	717616308	StepOnWood-005	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\StepOnWood-005_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\steps_wood\StepOnWood-005		4702
+	726339541	Horror shrieks woman	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Horror shrieks woman_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\Horror shrieks woman		56625
+	750011000	Swing 1_14	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Swing 1_14_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\swoosh\Swing 1_14		4271
+	786037089	zombie5	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\zombie5_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\zombie\zombie5		6561
+	898333519	Deep Zombie 2	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Deep Zombie 2_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\zombie\Deep Zombie 2		7119
+	927464713	StepOnWood-001	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\StepOnWood-001_1C768395.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\steps_wood\StepOnWood-001		6561
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	177099968	Zombie Breakout Soundscape	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Zombie Breakout Soundscape_10AEC600.wem	177099968.wem	\Actor-Mixer Hierarchy\Default Work Unit\music\Zombie Breakout Soundscape	
+	854596543	Sad Movie sounds_01	D:\Unity_Projekte\Glow\Glow_WwiseProject\.cache\Windows\SFX\Sad Movie sounds_01_10AEC600.wem	854596543.wem	\Actor-Mixer Hierarchy\Default Work Unit\music\Sad Movie sounds_01	
 

@@ -5,20 +5,29 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\User\Downloads\SoundQ Audio\"/>
 				<Property Name="Event Action List\{0BF1BAF2-022E-43FF-BAD8-EF53B462991D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{17F095D7-52C5-4DF4-8190-FFB9FF496B7B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{18480BC7-55E9-4D07-924F-791CD36DEB2F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1B563A84-E7BE-4BDD-8872-3F3A19F901C8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5882886E-D2CE-4F69-814B-3C52BA1CD186}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5F116FB6-2DDB-4FC1-85FB-D95B4A15A415}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{6F0B1BD7-6064-43A8-AF08-E7419A9D41A8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{741BA929-5E29-40D5-956A-3FF0F5780004}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{75F6136F-DD88-4CA2-B5DF-B08FEC4D726E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7782D42E-1103-4AA0-B346-D12134EA813E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{78D83E92-CE40-43E7-B0F6-D00B8C3748DF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{79548FA4-02EF-4DC2-A47F-D3D3E4CFED0C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7D3416EF-C6A5-45C6-8A74-827DAF30B679}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A2CF77B3-50E2-496E-A62F-9280D256FA2D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{C287E432-70BF-4546-B93C-001B148C9EF3}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C7C35AA8-5324-4F49-BA67-E749C24609DA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CC3EFAEC-858E-4B71-B257-506D13C371CD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CCA329B5-8F98-4AE9-9CD2-EBD853321E75}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CCE146F4-D5ED-4209-8CEB-7A13C1CB7ACD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D09A32A6-EB8A-4EF5-BE09-7377CA1CFD80}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{DBE35EE7-6130-4B44-A064-B166DFB71355}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E2BF4F5A-73BC-4F63-8F04-ABF0355D1EA8}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E3E5FFCE-2728-4943-853C-E35E27D10E4D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F3814A97-6DF7-4B20-9377-F6422C194137}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{FBEDD0AF-67B6-4A74-883D-903C82F40DE6}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -41,20 +50,21 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="n2ZcKK0cqkqTQkCeb2Ag5Q=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="5jTq0bNzKU6xm6Fmh2yOEg=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="kHSl4ceK30mDbKVRIHMx/wEvadb/////kAacpHBqs0yXvohfFPIlJgEvadb/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="kAacpHBqs0yXvohfFPIlJgEvws//////kHSl4ceK30mDbKVRIHMx/wEvws//////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint1" Type="int32" Value="2"/>
 				<Property Name="MeterView\MeterMode1Viewpoint2" Type="int32" Value="3"/>
 				<Property Name="MeterView\MeterMode1Viewpoint3" Type="int32" Value="0"/>
-				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
+				<Property Name="Mixing Desk\GroupCollapse\x64_{3B7D42BF-1F68-485E-B6DF-0C507F1B6F92}" Type="string" Value="AQAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Mixing Desk\LastSession" Type="string" Value="{3B7D42BF-1F68-485E-B6DF-0C507F1B6F92}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
 				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_12_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
-				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{27092F88-225A-1154-6725-C8A34F3D4482}"/>
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}"/>
 				<Property Name="ProjectExplorer\FirstVisible_5_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_7_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
@@ -113,6 +123,7 @@
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{91564CD6-677A-4ED9-81C8-D1716075F920}"/>
 			</PropertyList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{061D5D87-B914-45E8-B3F7-8D3267DF144F}" SchemaVersion="103">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{061D5D87-B914-45E8-B3F7-8D3267DF144F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{061D5D87-B914-45E8-B3F7-8D3267DF144F}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="default" ID="{3B7D42BF-1F68-485E-B6DF-0C507F1B6F92}">
+					<ObjectList>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C60B1C18-7F63-49D4-803B-A6FAA2D05D1B}"/>
+						<ObjectRef Name="sword" ID="{425DC467-C9C8-418A-8165-46E63ED09C8D}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+						<ObjectRef Name="orbs" ID="{E78B1AFB-59F6-431A-92B2-27B18CBBD724}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+						<ObjectRef Name="swoosh" ID="{52FBD89A-7B47-4383-9D74-C2C16ED6551B}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+						<ObjectRef Name="music" ID="{D3A786A1-00DE-4552-9C24-CB1E69604211}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>

@@ -9,6 +9,18 @@
 						<Property Name="Max" Type="Real64" Value="4"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="health" ID="{B93CCD0F-D02B-4D46-AD01-F1433B3B2F27}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="moving" ID="{70D098B6-1E8F-46C6-82FD-E2148C7A6821}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

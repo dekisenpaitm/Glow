@@ -69,6 +69,89 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_snack" ID="{E3E5FFCE-2728-4943-853C-E35E27D10E4D}">
+					<ChildrenList>
+						<Action Name="" ID="{D536CEC8-0D50-4BBC-AC3F-A31770BD5BF6}" ShortID="836479624">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="2 Zombies eating" ID="{B7E9209F-DE20-4B37-B96F-B43170490847}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_help" ID="{C7C35AA8-5324-4F49-BA67-E749C24609DA}">
+					<ChildrenList>
+						<Action Name="" ID="{4BAC1654-CC1B-4929-A2D9-D45879DD7E31}" ShortID="577525939">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cry for help- Collective" ID="{A0DD4B64-4804-4A0C-B55C-3CCD9CD598A6}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_radio" ID="{75F6136F-DD88-4CA2-B5DF-B08FEC4D726E}">
+					<ChildrenList>
+						<Action Name="" ID="{8AE5045A-FD88-4E07-923C-E86201C3015D}" ShortID="571133011">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EAS Warning of Civil unrest and or Zombies" ID="{6059400C-47F2-435F-B933-7914DCCBA498}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_scream" ID="{6F0B1BD7-6064-43A8-AF08-E7419A9D41A8}">
+					<ChildrenList>
+						<Action Name="" ID="{0E6AD84B-C8EE-486A-A0FE-63BE5880B08A}" ShortID="237174644">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Horror shrieks woman" ID="{70C2DC46-E123-459B-B988-DD2694C01D3F}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_steps" ID="{7782D42E-1103-4AA0-B346-D12134EA813E}">
+					<ChildrenList>
+						<Action Name="" ID="{81A76AE1-0517-496E-B5A7-281D129F1BF5}" ShortID="454072705">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="steps" ID="{98854454-BC41-456F-8C9A-22D92008463F}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pause_steps" ID="{17F095D7-52C5-4DF4-8190-FFB9FF496B7B}">
+					<ChildrenList>
+						<Action Name="" ID="{D4C0B60B-E4FE-452B-B842-433F2F9299D6}" ShortID="157902343">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="steps" ID="{98854454-BC41-456F-8C9A-22D92008463F}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Resume_steps" ID="{A2CF77B3-50E2-496E-A62F-9280D256FA2D}">
+					<ChildrenList>
+						<Action Name="" ID="{C994392C-B10B-4702-B7C6-EF3B34523A16}" ShortID="718080058">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="steps" ID="{98854454-BC41-456F-8C9A-22D92008463F}" WorkUnitID="{EAD35207-2D44-414A-A9A4-E118F50DAC62}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

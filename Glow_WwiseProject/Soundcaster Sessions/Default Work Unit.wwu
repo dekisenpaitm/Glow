@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F2EE8949-9B5A-44C7-B480-F0681A210DE5}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{F2EE8949-9B5A-44C7-B480-F0681A210DE5}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F2EE8949-9B5A-44C7-B480-F0681A210DE5}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="default" ID="{91564CD6-677A-4ED9-81C8-D1716075F920}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_background" ID="{1B563A84-E7BE-4BDD-8872-3F3A19F901C8}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_zombie" ID="{79548FA4-02EF-4DC2-A47F-D3D3E4CFED0C}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_finish" ID="{741BA929-5E29-40D5-956A-3FF0F5780004}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_orbs" ID="{CCA329B5-8F98-4AE9-9CD2-EBD853321E75}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_swoosh" ID="{E2BF4F5A-73BC-4F63-8F04-ABF0355D1EA8}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_sword" ID="{CC3EFAEC-858E-4B71-B257-506D13C371CD}" WorkUnitID="{3F20F33D-EE8D-4DA0-B3B6-9A1A19EF205C}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="swoosh" ID="{0139155C-2103-4470-B9A0-C59886C827EF}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="moving" ID="{70D098B6-1E8F-46C6-82FD-E2148C7A6821}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="health" ID="{B93CCD0F-D02B-4D46-AD01-F1433B3B2F27}"/>
+							<Value>5</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="background" ID="{67FFDC2D-6613-4393-9FFF-046198C38444}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="heavy" ID="{A57B4D50-FFF8-4821-9EC7-B6A36F39988D}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

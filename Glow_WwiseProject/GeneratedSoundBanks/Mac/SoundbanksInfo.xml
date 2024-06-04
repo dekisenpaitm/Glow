@@ -8,27 +8,45 @@
 		<ExternalSourcesOutputRoot>D:\Unity_Projekte\Glow\Glow_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="177099968" Language="SFX">
+			<ShortName>Zombie Breakout Soundscape.wav</ShortName>
+			<Path>SFX\Zombie Breakout Soundscape_10AEC600.wem</Path>
+		</File>
+		<File Id="854596543" Language="SFX">
+			<ShortName>Sad Movie sounds_01.wav</ShortName>
+			<Path>SFX\Sad Movie sounds_01_10AEC600.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="668088558" Language="SFX" Hash="1585507517">
+		<SoundBank Id="668088558" Language="SFX" Hash="1319032910">
 			<ObjectPath>\SoundBanks\Default Work Unit\Glow</ObjectPath>
 			<ShortName>Glow</ShortName>
 			<Path>Glow.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3196207338" Name="Play_background" ObjectPath="\Events\Default Work Unit\Play_background" DurationType="OneShot" DurationMin="255.100998" DurationMax="255.100998">
-					<IncludedMemoryFiles>
+				<Event Id="2011001937" Name="Pause_steps" ObjectPath="\Events\Default Work Unit\Pause_steps" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3196207338" Name="Play_background" ObjectPath="\Events\Default Work Unit\Play_background" DurationType="Infinite">
+					<ReferencedStreamedFiles>
 						<File Id="177099968" Language="SFX">
 							<ShortName>Zombie Breakout Soundscape.wav</ShortName>
-							<Path>SFX\Zombie Breakout Soundscape_10C4C929.wem</Path>
+							<Path>SFX\Zombie Breakout Soundscape_10AEC600.wem</Path>
 						</File>
-					</IncludedMemoryFiles>
+					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="1793765179" Name="Play_finish" ObjectPath="\Events\Default Work Unit\Play_finish" DurationType="OneShot" DurationMin="180.371002" DurationMax="180.371002">
-					<IncludedMemoryFiles>
+				<Event Id="1793765179" Name="Play_finish" ObjectPath="\Events\Default Work Unit\Play_finish" DurationType="Infinite">
+					<ReferencedStreamedFiles>
 						<File Id="854596543" Language="SFX">
 							<ShortName>Sad Movie sounds_01.wav</ShortName>
-							<Path>SFX\Sad Movie sounds_01_10C4C929.wem</Path>
+							<Path>SFX\Sad Movie sounds_01_10AEC600.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+				</Event>
+				<Event Id="2454594115" Name="Play_help" ObjectPath="\Events\Default Work Unit\Play_help" DurationType="OneShot" DurationMin="8.041354" DurationMax="8.041354">
+					<IncludedMemoryFiles>
+						<File Id="167941320" Language="SFX">
+							<ShortName>Cry for help- Collective.wav</ShortName>
+							<Path>SFX\Cry for help- Collective_1C768395.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -36,31 +54,56 @@
 					<IncludedMemoryFiles>
 						<File Id="64916704" Language="SFX">
 							<ShortName>Retro coin collect 2.wav</ShortName>
-							<Path>SFX\Retro coin collect 2_10C4C929.wem</Path>
+							<Path>SFX\Retro coin collect 2_1C768395.wem</Path>
 						</File>
 						<File Id="117066013" Language="SFX">
 							<ShortName>Retro coin collect 1.wav</ShortName>
-							<Path>SFX\Retro coin collect 1_10C4C929.wem</Path>
+							<Path>SFX\Retro coin collect 1_1C768395.wem</Path>
 						</File>
 						<File Id="663997371" Language="SFX">
 							<ShortName>Retro coin collect 3.wav</ShortName>
-							<Path>SFX\Retro coin collect 3_10C4C929.wem</Path>
+							<Path>SFX\Retro coin collect 3_1C768395.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2953849999" Name="Play_radio" ObjectPath="\Events\Default Work Unit\Play_radio" DurationType="OneShot" DurationMin="91.948997" DurationMax="91.948997">
+					<IncludedMemoryFiles>
+						<File Id="547258487" Language="SFX">
+							<ShortName>EAS Warning of Civil unrest and or Zombies.wav</ShortName>
+							<Path>SFX\EAS Warning of Civil unrest and or Zombies_1C768395.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2470536401" Name="Play_scream" ObjectPath="\Events\Default Work Unit\Play_scream" DurationType="OneShot" DurationMin="8.174271" DurationMax="8.174271">
+					<IncludedMemoryFiles>
+						<File Id="726339541" Language="SFX">
+							<ShortName>Horror shrieks woman.wav</ShortName>
+							<Path>SFX\Horror shrieks woman_1C768395.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="190684084" Name="Play_snack" ObjectPath="\Events\Default Work Unit\Play_snack" DurationType="OneShot" DurationMin="28.043491" DurationMax="28.043491">
+					<IncludedMemoryFiles>
+						<File Id="392492340" Language="SFX">
+							<ShortName>2 Zombies eating.wav</ShortName>
+							<Path>SFX\2 Zombies eating_1C768395.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2600469463" Name="Play_steps" ObjectPath="\Events\Default Work Unit\Play_steps" DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2462113679" Name="Play_swoosh" ObjectPath="\Events\Default Work Unit\Play_swoosh" DurationType="OneShot" DurationMin="1.123083" DurationMax="1.123083">
 					<IncludedMemoryFiles>
 						<File Id="444349153" Language="SFX">
 							<ShortName>Swing 1_10.wav</ShortName>
-							<Path>SFX\Swing 1_10_10C4C929.wem</Path>
+							<Path>SFX\Swing 1_10_1C768395.wem</Path>
 						</File>
 						<File Id="632184258" Language="SFX">
 							<ShortName>Swing 1_1.wav</ShortName>
-							<Path>SFX\Swing 1_1_10C4C929.wem</Path>
+							<Path>SFX\Swing 1_1_1C768395.wem</Path>
 						</File>
 						<File Id="750011000" Language="SFX">
 							<ShortName>Swing 1_14.wav</ShortName>
-							<Path>SFX\Swing 1_14_10C4C929.wem</Path>
+							<Path>SFX\Swing 1_14_1C768395.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -68,15 +111,15 @@
 					<IncludedMemoryFiles>
 						<File Id="371088928" Language="SFX">
 							<ShortName>06SWORD02.aif.wav</ShortName>
-							<Path>SFX\06SWORD02.aif_10C4C929.wem</Path>
+							<Path>SFX\06SWORD02.aif_1C768395.wem</Path>
 						</File>
 						<File Id="580428230" Language="SFX">
 							<ShortName>06SWORD06.aif.wav</ShortName>
-							<Path>SFX\06SWORD06.aif_10C4C929.wem</Path>
+							<Path>SFX\06SWORD06.aif_1C768395.wem</Path>
 						</File>
 						<File Id="652543009" Language="SFX">
 							<ShortName>Sword_Clash (27).wav</ShortName>
-							<Path>SFX\Sword_Clash (27)_10C4C929.wem</Path>
+							<Path>SFX\Sword_Clash (27)_1C768395.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -84,23 +127,28 @@
 					<IncludedMemoryFiles>
 						<File Id="786037089" Language="SFX">
 							<ShortName>zombie5.wav</ShortName>
-							<Path>SFX\zombie5_10C4C929.wem</Path>
+							<Path>SFX\zombie5_1C768395.wem</Path>
 						</File>
 						<File Id="898333519" Language="SFX">
 							<ShortName>Deep Zombie 2.wav</ShortName>
-							<Path>SFX\Deep Zombie 2_10C4C929.wem</Path>
+							<Path>SFX\Deep Zombie 2_1C768395.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="869564952" Name="Resume_steps" ObjectPath="\Events\Default Work Unit\Resume_steps" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="751805364" Name="swoosh" ObjectPath="\Game Parameters\Default Work Unit\swoosh"/>
+				<GameParameter Id="3677180323" Name="health" ObjectPath="\Game Parameters\Default Work Unit\health"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2619676409">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1491259906">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="1280402566" Name="demonic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\demonic"/>
+			</IncludedAuxBusses>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

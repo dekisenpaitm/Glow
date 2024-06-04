@@ -7,8 +7,8 @@
 					<PropertyList>
 						<Property Name="Channels" Type="int32">
 							<ValueList>
-								<Value Platform="Windows">4</Value>
-								<Value Platform="Mac">4</Value>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Mac">0</Value>
 							</ValueList>
 						</Property>
 						<Property Name="LRMix" Type="Real64">
@@ -38,10 +38,60 @@
 					</PropertyList>
 					<ConversionPluginInfoList>
 						<ConversionPluginInfo Platform="Windows">
-							<ConversionPlugin Name="" ID="{BBAF70FC-8562-4B22-841F-B63B4DD6294C}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{CC628E50-8007-427D-9961-55447FA0BC2D}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="QualityFactor" Type="Real32" Value="2"/>
+								</PropertyList>
+							</ConversionPlugin>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Mac">
-							<ConversionPlugin Name="" ID="{952F0194-ACA4-45BB-B7B5-E250CAFE868D}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{C0932978-77F2-4A21-ACAA-D8F3B59FCA26}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="QualityFactor" Type="Real32" Value="2"/>
+								</PropertyList>
+							</ConversionPlugin>
+						</ConversionPluginInfo>
+					</ConversionPluginInfoList>
+				</Conversion>
+				<Conversion Name="music" ID="{5D70B6CF-C43B-4988-96E2-13CA2FCE3616}">
+					<PropertyList>
+						<Property Name="Channels" Type="int32">
+							<ValueList>
+								<Value Platform="Windows">1</Value>
+								<Value Platform="Mac">1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LRMix" Type="Real64">
+							<ValueList>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MaxSampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="MinSampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Windows">0</Value>
+								<Value Platform="Mac">0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SampleRate" Type="int32">
+							<ValueList>
+								<Value Platform="Windows">2</Value>
+								<Value Platform="Mac">2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ConversionPluginInfoList>
+						<ConversionPluginInfo Platform="Windows">
+							<ConversionPlugin Name="" ID="{DB7E973D-1BF0-41BF-8D33-4F8F98243F96}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
+						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Mac">
+							<ConversionPlugin Name="" ID="{23942159-DB1F-4C58-9669-A06B19AC7C55}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>

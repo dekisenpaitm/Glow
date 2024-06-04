@@ -31,12 +31,19 @@ public class GameManager : MonoBehaviour
 
     public void DecreaseHealth(int decreaseBy) {
         _health -= decreaseBy;
+        PassAkValue();
         UpdateHealthCounter();
     }
 
     public void IncreaseHealth(int increaseBy) {
         _health += increaseBy;
+        PassAkValue();
         UpdateHealthCounter();
+    }
+
+    public void PassAkValue()
+    {
+        AkSoundEngine.SetRTPCValue("health", _health);
     }
 
     public void UpdateHealthCounter()
